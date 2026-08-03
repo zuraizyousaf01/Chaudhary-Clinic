@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "patientName": "Mohammad Saeed",
+    "rating": 5,
+    "visitReason": "Surgery",
+    "reviewText": "Dr. Sahib is a very competent and experienced surgeon. He helped me a lot during difficult times and especially when the situation was more serious, he took out time and gave me a slot, for which I am deeply grateful. His guidance, attention and confidence-inspiring attitude before and after the surgery is commendable. He is a sincere, compassionate and highly professional doctor. I definitely recommend him to every patient as an excellent surgeon.",
+    "relativeTime": "6 months ago"
+  },
+  {
+    "id": 2,
+    "patientName": "Doctor Muhammad Imran",
+    "rating": 5,
+    "visitReason": "Consultation",
+    "reviewText": "Some hands are meant for healing. Dr. Waseem Abbas Chaudhry is a unique example of Politeness &Compassionate Care.\nVery Humble & cooperative. If I have been asked to describe Dr. Waseem in one word, then I would say *Maseeha*",
+    "relativeTime": "7 months ago"
+  },
+  {
+    "id": 3,
+    "patientName": "FRAZ UMER",
+    "rating": 5,
+    "visitReason": "General Surgery",
+    "reviewText": "Highly dedicated and experienced doctor.Best general surgeon in multan.highly recommended",
+    "relativeTime": "7 months ago"
+  },
+  {
+    "id": 4,
+    "patientName": "SARA RAO",
+    "rating": 5,
+    "visitReason": "Consultation",
+    "reviewText": "He is an angel for his patients\nAlhamdulillah ❣️ ❣️ ❣️",
+    "relativeTime": "2 years ago"
+  }
+]
