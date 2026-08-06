@@ -8,6 +8,7 @@ import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { StaggerContainer, StaggerItem } from "@/components/ui/animations/StaggerContainer";
 import { YouTubeVideos } from "@/components/ui/YouTubeVideos";
 import { LaparoscopyIcon, GallbladderIcon, HerniaIcon, MaternityIcon, HighRiskPregnancyIcon, GynecologyIcon } from "@/components/ui/icons/MedicalIcons";
+import { FAQSection } from "@/components/ui/FAQSection";
 
 export default function Home() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
@@ -15,7 +16,7 @@ export default function Home() {
   const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
 
   return (
-    <div className="flex flex-col gap-20 pb-20">
+    <div className="flex flex-col pb-20">
       {/* Hero Section */}
       <section className="relative -mt-20 pt-20 min-h-screen flex flex-col items-center justify-center text-white overflow-hidden z-0">
         <div className="absolute inset-0 bg-[url('/images/doctors/opd.webp')] bg-cover bg-center bg-fixed z-0" />
@@ -54,19 +55,19 @@ export default function Home() {
         </StaggerContainer>
       </section>
 
-            {/* Dual Specialists Section */}
-      <div className="relative z-10 -mt-16 rounded-t-[3rem] overflow-hidden shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.1)]">
+      {/* Dual Specialists Section */}
+      <div className="relative z-10 overflow-hidden">
         {/* Dr. Waseem Section */}
-      <section className="py-16 lg:py-24 relative overflow-hidden bg-white">
+      <section className="py-10 lg:py-16 relative overflow-hidden bg-white">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50/50 rounded-l-[100px] -z-10 hidden lg:block" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Image Side */}
             <SlideUp className="order-2 lg:order-1">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl transform translate-x-4 translate-y-4" />
-                <div className="relative h-[400px] lg:h-[650px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <div className="relative h-[350px] lg:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                   <Image 
                     src="/images/doctors/dr-waseem.webp" 
                     alt="Dr. Waseem Abbas Chaudhary" 
@@ -94,14 +95,14 @@ export default function Home() {
                 <Stethoscope className="h-4 w-4" />
                 General, Laparoscopic & Gynecologic Surgery
               </span>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
                 Dr. Waseem Abbas Chaudhary
               </h2>
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 Minimally Invasive Surgery Specialist dedicated to providing advanced surgical care with reduced recovery times and optimal patient outcomes.
               </p>
 
-              <div className="space-y-6 mb-10">
+              <div className="space-y-4 mb-6">
                 <div className="flex gap-4">
                   <div className="mt-1 bg-slate-100 p-2 rounded-lg shrink-0">
                     <GraduationCap className="h-6 w-6 text-primary" />
@@ -145,9 +146,9 @@ export default function Home() {
       </section>
 
         {/* Dr. Sehar Section */}
-      <section className="py-16 lg:py-24 relative overflow-hidden bg-slate-50">
+      <section className="py-10 lg:py-16 relative overflow-hidden bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Content Side */}
             <SlideUp className="order-1 lg:order-1">
@@ -155,14 +156,14 @@ export default function Home() {
                 <HeartPulse className="h-4 w-4" />
                 Obstetrics & Gynecology
               </span>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
                 Dr. Sehar Waseem Abbas Chaudhary
               </h2>
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                 Expert in comprehensive women's health, maternity care, and handling complex gynecological procedures with compassion.
               </p>
 
-              <div className="space-y-6 mb-10">
+              <div className="space-y-4 mb-6">
                 <div className="flex gap-4">
                   <div className="mt-1 bg-white shadow-sm border border-slate-100 p-2 rounded-lg shrink-0">
                     <GraduationCap className="h-6 w-6 text-pink-500" />
@@ -209,7 +210,7 @@ export default function Home() {
             <SlideUp delay={0.2} className="order-2 lg:order-2">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-tl from-pink-200 to-transparent rounded-3xl transform -translate-x-4 translate-y-4" />
-                <div className="relative h-[400px] lg:h-[650px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <div className="relative h-[350px] lg:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                   <Image 
                     src="/images/doctors/dr-sehar.webp" 
                     alt="Dr. Sehar Waseem Abbas Chaudhary" 
@@ -237,23 +238,23 @@ export default function Home() {
       </div>
 
       {/* Services Enhanced Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 relative">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative">
         {/* Subtle background blob */}
         <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 -z-10 pointer-events-none" />
         
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           {/* Left Column: Title & Text */}
-          <div className="lg:col-span-4 lg:sticky lg:top-32">
+          <div className="lg:col-span-4 lg:sticky lg:top-24">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 mb-4">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                 <span className="text-xs font-bold text-slate-600 uppercase tracking-wider">Premium Care</span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 leading-tight">
                 Excellence in <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Medical Services</span>
               </h2>
-              <p className="text-slate-600 text-lg leading-relaxed mb-8">
+              <p className="text-slate-600 text-base leading-relaxed mb-6">
                 We combine state-of-the-art technology with compassionate care to offer advanced minimally invasive surgeries and comprehensive maternity solutions.
               </p>
               <Link
@@ -332,17 +333,17 @@ export default function Home() {
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
-                  <StaggerItem key={i} className={`flex-shrink-0 w-[85vw] sm:w-auto snap-center sm:snap-align-none ${i % 2 !== 0 ? 'sm:mt-12' : ''}`}>
-                    <div className={`group h-full relative bg-white rounded-[2rem] p-8 border ${item.border} transition-all duration-300 ${item.hover} hover:shadow-xl overflow-hidden flex flex-col`}>
+                  <StaggerItem key={i} className={`flex-shrink-0 w-[85vw] sm:w-auto snap-center sm:snap-align-none ${i % 2 !== 0 ? 'sm:mt-8' : ''}`}>
+                    <div className={`group h-full relative bg-white rounded-[2rem] p-6 border ${item.border} transition-all duration-300 ${item.hover} hover:shadow-xl overflow-hidden flex flex-col`}>
                       {/* Decorative Background Blob */}
                       <div className={`absolute -right-8 -top-8 w-32 h-32 rounded-full ${item.bg} opacity-50 transition-transform duration-500 group-hover:scale-150 z-0`}></div>
                       
                       <div className="relative z-10 flex flex-col h-full">
-                        <div className={`w-14 h-14 rounded-2xl ${item.bg} flex items-center justify-center mb-6`}>
+                        <div className={`w-14 h-14 rounded-2xl ${item.bg} flex items-center justify-center mb-4`}>
                           <Icon className={`h-7 w-7 ${item.color} stroke-[1.5]`} />
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h3>
-                        <p className="text-slate-600 text-sm leading-relaxed mb-8 flex-grow">{item.desc}</p>
+                        <h3 className="text-xl font-bold text-slate-900 mb-2">{item.title}</h3>
+                        <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">{item.desc}</p>
                         
                         <div className="mt-auto">
                           <Link href="/services" className={`inline-flex items-center text-sm font-bold ${item.color} group-hover:gap-2 transition-all`}>
@@ -361,7 +362,11 @@ export default function Home() {
 
 
 
+      {/* FAQ Section */}
+      <FAQSection />
+
       {/* Google Reviews */}
+
       <section className="bg-slate-100 py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SlideUp className="text-center mb-12">
