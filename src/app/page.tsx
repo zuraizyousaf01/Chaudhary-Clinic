@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Calendar, ArrowRight, Star, MapPin } from "lucide-react";
+import { Phone, Calendar, ArrowRight, Star, MapPin, Award, GraduationCap, Stethoscope } from "lucide-react";
 import reviews from "../../public/data/reviews.json";
 
 export default function Home() {
-  const generalWaLink = "https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.%20Please%20let%20me%20know%20the%20available%20OPD%20time%20slots.";
-  const lapWaLink = "https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20want%20to%20book%20a%20consultation%20with%20the%20Laparoscopic%20Surgery%20Specialist.";
-  const gynWaLink = "https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20want%20to%20book%20an%20OPD%20consultation%20with%20the%20Gynecology%20%26%20Obstetrics%20Specialist.";
+  const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
+  const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
+  const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
 
   return (
     <div className="flex flex-col gap-20 pb-20">
@@ -48,49 +48,89 @@ export default function Home() {
       {/* Dual Specialists Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* Laparoscopic Card */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col border border-slate-200 transition-transform hover:-translate-y-1 duration-300">
-            <div className="h-48 bg-slate-200 relative">
-              <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600">
-                [Laparoscopic Specialist Photo]
-              </div>
+          {/* Surgeon Specialist */}
+          <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
+            <div className="h-80 lg:h-96 bg-slate-200 relative">
+              <Image 
+                src="/images/doctors/dr-waseem.webp" 
+                alt="Dr. Waseem Abbas Chaudhary" 
+                fill 
+                className="object-cover object-[center_15%]"
+              />
             </div>
             <div className="p-8 flex-1 flex flex-col">
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Laparoscopic Surgery</h3>
-              <p className="text-slate-600 mb-6 flex-1">
-                Minimally invasive procedures for gallbladder, hernia, appendectomy, and diagnostic laparoscopy with fast recovery times.
-              </p>
+              <div className="mb-4 md:min-h-[180px]">
+                <span className="inline-block px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-bold uppercase tracking-wider mb-2">General, Advance Laparoscopic & Gynecologic Surgery</span>
+                <h2 className="text-3xl font-bold text-slate-900">Dr. Waseem Abbas Chaudhary</h2>
+                <p className="text-secondary font-medium">Minimally Invasive Surgery Specialist</p>
+              </div>
+
+              <div className="space-y-4 mb-8 flex-1">
+                <div className="flex gap-3">
+                  <GraduationCap className="h-5 w-5 text-slate-400 shrink-0" />
+                  <p className="text-sm text-slate-600">MBBS, FCPS (General Surgery)</p>
+                </div>
+                <div className="flex gap-3">
+                  <Award className="h-5 w-5 text-slate-400 shrink-0" />
+                  <p className="text-sm text-slate-600">Over 10 years of experience in minimally invasive surgical procedures.</p>
+                </div>
+                <div className="flex gap-3">
+                  <Stethoscope className="h-5 w-5 text-slate-400 shrink-0" />
+                  <p className="text-sm text-slate-600">Specializes in Cholecystectomy (Gallbladder), Hernia Repair, Appendectomy, and diagnostic laparoscopy.</p>
+                </div>
+              </div>
+
               <a
                 href={lapWaLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-md hover:bg-primary-hover transition-colors"
+                className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white shadow-md hover:bg-primary-hover transition-colors"
               >
-                Consult Surgeon
+                Book Consultation
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
           </div>
 
-          {/* Gynecology Card */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col border border-slate-200 transition-transform hover:-translate-y-1 duration-300">
-            <div className="h-48 bg-slate-200 relative">
-              <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600">
-                [Gynecology Specialist Photo]
-              </div>
+          {/* Gynecology Specialist */}
+          <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
+            <div className="h-80 lg:h-96 bg-slate-200 relative">
+              <Image 
+                src="/images/doctors/dr-sehar.webp" 
+                alt="Dr. Sehar Waseem Abbas Chaudhary" 
+                fill 
+                className="object-cover object-[center_15%]"
+              />
             </div>
             <div className="p-8 flex-1 flex flex-col">
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Gynecology & Obstetrics</h3>
-              <p className="text-slate-600 mb-6 flex-1">
-                Comprehensive care for women, including prenatal care, high-risk pregnancy management, and PCOS treatment.
-              </p>
+              <div className="mb-4 md:min-h-[180px]">
+                <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-600 text-xs font-bold uppercase tracking-wider mb-2">Obstetrician & Gynecologist</span>
+                <h2 className="text-3xl font-bold text-slate-900">Dr. Sehar Waseem Abbas Chaudhary</h2>
+                <p className="text-secondary font-medium">Women's Health & Maternity Care</p>
+              </div>
+
+              <div className="space-y-4 mb-8 flex-1">
+                <div className="flex gap-3">
+                  <GraduationCap className="h-5 w-5 text-slate-400 shrink-0" />
+                  <p className="text-sm text-slate-600">MBBS, FCPS (Gynecology & Obstetrics)</p>
+                </div>
+                <div className="flex gap-3">
+                  <Award className="h-5 w-5 text-slate-400 shrink-0" />
+                  <p className="text-sm text-slate-600">Expert in handling high-risk pregnancies and complex gynecological surgeries.</p>
+                </div>
+                <div className="flex gap-3">
+                  <Stethoscope className="h-5 w-5 text-slate-400 shrink-0" />
+                  <p className="text-sm text-slate-600">Specializes in normal/cesarean deliveries, PCOS management, infertility treatments, and comprehensive prenatal, antenatal, and postnatal care.</p>
+                </div>
+              </div>
+
               <a
                 href={gynWaLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-md hover:bg-primary-hover transition-colors"
+                className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white shadow-md hover:bg-primary-hover transition-colors"
               >
-                Consult Gynecologist
+                Book Consultation
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
@@ -131,7 +171,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Patient Reviews</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Read what our patients have to say about their experience at Chaudhary Clinic.
+              Read what our patients have to say about their experience at Choudhury Clinic.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-10">

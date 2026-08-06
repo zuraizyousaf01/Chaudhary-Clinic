@@ -1,7 +1,7 @@
 import { Phone, MessageCircle, MapPin, Clock, ArrowRight } from "lucide-react";
 
 export default function ContactPage() {
-  const generalWaLink = "https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.%20Please%20let%20me%20know%20the%20available%20OPD%20time%20slots.";
+  const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
 
   return (
     <div className="py-12 lg:py-24 bg-slate-50 min-h-screen">

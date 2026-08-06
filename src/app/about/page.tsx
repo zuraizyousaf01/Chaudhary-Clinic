@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="py-12 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">About Chaudhary Clinic</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">About Choudhury Clinic</h1>
           <p className="text-lg text-slate-600">
             Dedicated to providing advanced surgical and maternal care with a commitment to patient safety and hygiene.
           </p>
@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12 mb-12">
           <h2 className="text-2xl font-bold text-primary mb-6 border-b pb-4">Our Vision</h2>
           <p className="text-slate-700 leading-relaxed mb-6">
-            Chaudhary Clinic was established with a singular vision: to make advanced medical care accessible, safe, and comfortable. We specialize in two primary domains: minimally invasive Laparoscopic Surgery and comprehensive Gynecology & Obstetrics. 
+            Choudhury Clinic was established with a singular vision: to make advanced medical care accessible, safe, and comfortable. We specialize in two primary domains: minimally invasive Laparoscopic Surgery and comprehensive Gynecology & Obstetrics. 
           </p>
           <p className="text-slate-700 leading-relaxed">
             By focusing on these core specialties, we ensure that our patients receive expert attention from highly qualified specialists using the latest medical technology. Our patient-first approach means less recovery time, better outcomes, and a supportive environment throughout your healthcare journey.

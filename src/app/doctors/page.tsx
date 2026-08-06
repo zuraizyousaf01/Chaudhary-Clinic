@@ -1,8 +1,9 @@
+import Image from "next/image";
 import { ArrowRight, Award, GraduationCap, Stethoscope } from "lucide-react";
 
 export default function DoctorsPage() {
-  const lapWaLink = "https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20want%20to%20book%20a%20consultation%20with%20the%20Laparoscopic%20Surgery%20Specialist.";
-  const gynWaLink = "https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20want%20to%20book%20an%20OPD%20consultation%20with%20the%20Gynecology%20%26%20Obstetrics%20Specialist.";
+  const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
+  const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
 
   return (
     <div className="py-12 lg:py-24 bg-slate-50">
@@ -17,18 +18,21 @@ export default function DoctorsPage() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Laparoscopic Specialist */}
           <div className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
-            <div className="h-64 bg-slate-200 relative">
-               <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600">
-                  [Laparoscopic Specialist Photo]
-               </div>
+            <div className="h-80 lg:h-96 bg-slate-200 relative">
+              <Image 
+                src="/images/doctors/dr-waseem.webp" 
+                alt="Dr. Waseem Abbas Chaudhary" 
+                fill 
+                className="object-cover object-[center_15%]"
+              />
             </div>
             <div className="p-8 flex-1 flex flex-col">
               <div className="mb-4">
-                <span className="inline-block px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-bold uppercase tracking-wider mb-2">General Surgeon</span>
-                <h2 className="text-3xl font-bold text-slate-900">Dr. Laparoscopic Surgeon</h2>
-                <p className="text-secondary font-medium">Laparoscopic & General Surgery Specialist</p>
+                <span className="inline-block px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-bold uppercase tracking-wider mb-2">General, Advance Laparoscopic & Gynecologic Surgery</span>
+                <h2 className="text-3xl font-bold text-slate-900">Dr. Waseem Abbas Chaudhary</h2>
+                <p className="text-secondary font-medium">Minimally Invasive Surgery Specialist</p>
               </div>
-              
+
               <div className="space-y-4 mb-8 flex-1">
                 <div className="flex gap-3">
                   <GraduationCap className="h-5 w-5 text-slate-400 shrink-0" />
@@ -58,18 +62,21 @@ export default function DoctorsPage() {
 
           {/* Gynecology Specialist */}
           <div className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
-            <div className="h-64 bg-slate-200 relative">
-               <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600">
-                  [Gynecology Specialist Photo]
-               </div>
+            <div className="h-80 lg:h-96 bg-slate-200 relative">
+              <Image 
+                src="/images/doctors/dr-sehar.webp" 
+                alt="Dr. Sehar Waseem Abbas Chaudhary" 
+                fill 
+                className="object-cover object-[center_15%]"
+              />
             </div>
             <div className="p-8 flex-1 flex flex-col">
               <div className="mb-4">
                 <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-600 text-xs font-bold uppercase tracking-wider mb-2">Obstetrician & Gynecologist</span>
-                <h2 className="text-3xl font-bold text-slate-900">Dr. Gynecology Specialist</h2>
+                <h2 className="text-3xl font-bold text-slate-900">Dr. Sehar Waseem Abbas Chaudhary</h2>
                 <p className="text-secondary font-medium">Women's Health & Maternity Care</p>
               </div>
-              
+
               <div className="space-y-4 mb-8 flex-1">
                 <div className="flex gap-3">
                   <GraduationCap className="h-5 w-5 text-slate-400 shrink-0" />
@@ -81,7 +88,7 @@ export default function DoctorsPage() {
                 </div>
                 <div className="flex gap-3">
                   <Stethoscope className="h-5 w-5 text-slate-400 shrink-0" />
-                  <p className="text-sm text-slate-600">Specializes in normal/cesarean deliveries, PCOS management, infertility treatments, and routine prenatal care.</p>
+                  <p className="text-sm text-slate-600">Specializes in normal/cesarean deliveries, PCOS management, infertility treatments, and comprehensive prenatal, antenatal, and postnatal care.</p>
                 </div>
               </div>
 

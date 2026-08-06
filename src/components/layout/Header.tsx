@@ -15,7 +15,7 @@ export default function Header() {
             CC
           </div>
           <span className="text-xl font-bold text-slate-900 hidden sm:block">
-            Chaudhary Clinic
+            Choudhury Clinic
           </span>
         </Link>
 
@@ -36,7 +36,7 @@ export default function Header() {
           </a>
 
           <a
-            href="https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.%20Please%20let%20me%20know%20the%20available%20OPD%20time%20slots."
+            href="https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all"

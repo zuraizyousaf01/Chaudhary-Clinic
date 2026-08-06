@@ -2,8 +2,8 @@ import { Activity, Baby, Scissors, HeartPulse } from "lucide-react";
 import Link from "next/link";
 
 export default function ServicesPage() {
-  const lapWaLink = "https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20want%20to%20book%20a%20consultation%20with%20the%20Laparoscopic%20Surgery%20Specialist.";
-  const gynWaLink = "https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20want%20to%20book%20an%20OPD%20consultation%20with%20the%20Gynecology%20%26%20Obstetrics%20Specialist.";
+  const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
+  const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
 
   return (
     <div className="py-12 lg:py-24 bg-white">

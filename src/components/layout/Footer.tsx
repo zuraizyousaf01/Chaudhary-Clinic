@@ -13,7 +13,7 @@ export default function Footer() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary font-bold">
                 CC
               </div>
-              <span className="text-xl font-bold">Chaudhary Clinic</span>
+              <span className="text-xl font-bold">Choudhury Clinic</span>
             </div>
             <p className="text-sm text-slate-400 mb-6">
               Advanced Laparoscopic & Gynecological Care providing state-of-the-art facilities and compassionate healthcare to our community.
@@ -34,7 +34,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-white transition-colors">About Clinic</Link></li>
               <li><Link href="/doctors" className="hover:text-white transition-colors">Our Doctors</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors">Medical Services</Link></li>
-              <li><a href="https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.%20Please%20let%20me%20know%20the%20available%20OPD%20time%20slots." target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-primary font-medium">Book Appointment</a></li>
+              <li><a href="https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-primary font-medium">Book Appointment</a></li>
             </ul>
           </div>
 
@@ -53,7 +53,7 @@ export default function Footer() {
                 <MessageCircle className="h-5 w-5 text-green-500 shrink-0" />
                 <div>
                   <p className="font-medium text-white">WhatsApp</p>
-                  <a href="https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic,%20I%20would%20like%20to%20inquire%20about%20doctor%20availability%20and%20services." target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+92 300 1775530</a>
+                  <a href="https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+92 336 8775530</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-800 text-sm text-slate-600 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Chaudhary Clinic. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Choudhury Clinic. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

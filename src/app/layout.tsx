@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Chaudhary Clinic",
+  title: "Choudhury Clinic",
   description: "Advanced Laparoscopic & Gynecological Care",
 };
 

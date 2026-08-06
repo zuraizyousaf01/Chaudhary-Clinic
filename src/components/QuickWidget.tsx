@@ -36,8 +36,8 @@ export default function QuickWidget() {
                 <User className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" />
                 <select className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none appearance-none bg-white">
                   <option value="">Choose Doctor...</option>
-                  <option value="laparoscopic">Dr. A. Chaudhary (Laparoscopic)</option>
-                  <option value="gynecology">Dr. S. Chaudhary (Gynecology)</option>
+                  <option value="laparoscopic">Dr. Waseem Abbas Chaudhary (Laparoscopic)</option>
+                  <option value="gynecology">Dr. Sehar Waseem Abbas Chaudhary (Gynecology)</option>
                 </select>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function QuickWidget() {
               <p className="text-sm text-green-800 mb-2 font-medium">Average Response Time:</p>
               <p className="text-2xl font-bold text-green-600">&lt; 5 mins</p>
             </div>
-            <a href="https://wa.me/923001775530?text=Hello%20Chaudhary%20Clinic,%20I%20would%20like%20to%20inquire%20about%20doctor%20availability%20and%20services." target="_blank" rel="noopener noreferrer" className="block w-full">
+            <a href="https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer" className="block w-full">
               <Button className="w-full mt-2 bg-[#25D366] hover:bg-[#25D366]/90 text-white border-0" size="lg">
                 Open WhatsApp <MessageCircle className="ml-2 h-4 w-4" />
               </Button>
