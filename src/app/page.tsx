@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col gap-20 pb-20">
       {/* Hero Section */}
       <section className="relative bg-theme-dark text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/facility/clinic-building.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-20 bg-[url('/images/doctors/opd.webp')] bg-cover bg-center" />
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 text-red-400 font-medium text-sm mb-8 border border-red-500/20">
             <Phone className="h-4 w-4" />
