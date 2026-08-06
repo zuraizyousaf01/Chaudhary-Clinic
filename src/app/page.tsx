@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone, Calendar, ArrowRight, Star, MapPin, Award, GraduationCap, Stethoscope, CheckCircle2, Clock, Activity, HeartPulse } from "lucide-react";
 import reviews from "../../public/data/reviews.json";
+import { ReviewCarousel } from "@/components/ui/ReviewCarousel";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { StaggerContainer, StaggerItem } from "@/components/ui/animations/StaggerContainer";
@@ -364,23 +365,8 @@ export default function Home() {
               Read what our patients have to say about their experience at Choudhury Clinic.
             </p>
           </SlideUp>
-          <StaggerContainer className="flex overflow-x-auto pb-8 snap-x snap-mandatory gap-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible md:snap-none md:pb-0 max-w-7xl mx-auto mb-10 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {reviews.map((review) => (
-              <StaggerItem key={review.id} className="min-w-[85vw] sm:min-w-[350px] md:min-w-0 flex-shrink-0 snap-center md:snap-align-none h-full">
-                <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col h-full hover:shadow-md transition-shadow">
-                  <div className="flex items-center gap-1 mb-3 text-yellow-400">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-slate-700 text-sm mb-4 max-h-32 overflow-y-auto pr-2 flex-grow">"{review.reviewText}"</p>
-                  <div className="mt-auto border-t border-slate-200 pt-4">
-                    <p className="font-semibold text-slate-900 text-sm">{review.patientName}</p>
-                    <p className="text-xs text-slate-600">{review.visitReason} • {review.relativeTime}</p>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
+          <StaggerContainer className="max-w-7xl mx-auto mb-10">
+            <ReviewCarousel reviews={reviews} />
           </StaggerContainer>
           <div className="text-center">
             <a
