@@ -42,7 +42,7 @@ export default function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-20 w-48 flex-shrink-0 scale-125 origin-left md:scale-150">
+          <div className="relative h-16 w-40 sm:h-20 sm:w-48 flex-shrink-0 scale-100 origin-left sm:scale-125 md:scale-150">
             <Image src="/images/logo.png" alt="Choudhury Clinic Logo" fill className="object-contain drop-shadow-sm" />
           </div>
         </Link>
