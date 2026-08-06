@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
         {/* Dr. Sehar Section */}
-      <section className="py-10 lg:py-16 relative overflow-hidden bg-slate-50">
+      <section className="py-10 lg:py-16 relative overflow-hidden bg-[#FAF8F5]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
@@ -367,7 +367,7 @@ export default function Home() {
 
       {/* Google Reviews */}
 
-      <section className="bg-slate-100 py-20">
+      <section className="bg-[#FAF8F5] py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SlideUp className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Patient Reviews</h2>
