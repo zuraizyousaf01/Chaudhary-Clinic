@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone, Calendar, ArrowRight, Star, MapPin, Award, GraduationCap, Stethoscope } from "lucide-react";
 import reviews from "../../public/data/reviews.json";
+import { FadeIn } from "@/components/ui/animations/FadeIn";
+import { SlideUp } from "@/components/ui/animations/SlideUp";
+import { StaggerContainer, StaggerItem } from "@/components/ui/animations/StaggerContainer";
 
 export default function Home() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
@@ -14,38 +17,45 @@ export default function Home() {
       <section className="relative -mt-20 pt-20 min-h-screen flex flex-col items-center justify-center text-white overflow-hidden z-0">
         <div className="absolute inset-0 bg-[url('/images/doctors/opd.webp')] bg-cover bg-center bg-fixed z-0" />
         <div className="absolute inset-0 bg-black/50 z-0" />
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl opacity-0-init animate-fade-in-up animation-delay-150">
-            Advanced Laparoscopic & <br className="hidden md:block" />
-            <span className="text-secondary">Gynecological Care</span>
-          </h1>
-          <p className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 opacity-0-init animate-fade-in-up animation-delay-300">
-            Providing state-of-the-art surgical facilities and compassionate maternity care in a clean, modern environment.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 opacity-0-init animate-fade-in-up animation-delay-450">
-            <a
-              href={generalWaLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-[#20b858] transition-all hover:scale-105"
-            >
-              <Calendar className="h-5 w-5" />
-              Book Appointment
-            </a>
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-theme-dark px-8 py-4 text-base font-medium text-white shadow-sm hover:bg-slate-700 transition-colors border border-slate-700"
-            >
-              Explore Services
-            </Link>
-          </div>
-        </div>
+        <StaggerContainer className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+          <StaggerItem>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl">
+              Advanced Laparoscopic & <br className="hidden md:block" />
+              <span className="text-secondary">Gynecological Care</span>
+            </h1>
+          </StaggerItem>
+          <StaggerItem>
+            <p className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10">
+              Providing state-of-the-art surgical facilities and compassionate maternity care in a clean, modern environment.
+            </p>
+          </StaggerItem>
+          <StaggerItem>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href={generalWaLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-[#20b858] transition-all hover:scale-105"
+              >
+                <Calendar className="h-5 w-5" />
+                Book Appointment
+              </a>
+              <Link
+                href="/services"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-theme-dark px-8 py-4 text-base font-medium text-white shadow-sm hover:bg-slate-700 transition-colors border border-slate-700"
+              >
+                Explore Services
+              </Link>
+            </div>
+          </StaggerItem>
+        </StaggerContainer>
       </section>
 
       {/* Dual Specialists Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-10">
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <StaggerContainer className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Surgeon Specialist */}
+          <StaggerItem>
           <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
             <div className="h-80 lg:h-96 bg-slate-200 relative">
               <Image 
@@ -87,10 +97,12 @@ export default function Home() {
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>
-          </div>
+            </div>
+          </StaggerItem>
 
           {/* Gynecology Specialist */}
-          <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
+          <StaggerItem>
+            <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300 h-full">
             <div className="h-80 lg:h-96 bg-slate-200 relative">
               <Image 
                 src="/images/doctors/dr-sehar.webp" 
@@ -132,48 +144,56 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+          </StaggerItem>
+        </StaggerContainer>
       </section>
 
       {/* Facility Gallery */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <FadeIn className="text-center mb-12">
           <h2 className="text-3xl font-bold text-slate-900 mb-4">State of the Art Facilities</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
             Our clinic is equipped with modern, modular operation theaters and hygienic recovery rooms to ensure the best care.
           </p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <div className="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden relative shadow-md">
-             <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600 text-sm font-medium">
+        </FadeIn>
+        <StaggerContainer className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <StaggerItem>
+            <div className="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden relative shadow-md">
+              <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600 text-sm font-medium">
                 [Operation Theater Photo]
               </div>
-          </div>
-          <div className="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden relative shadow-md">
-             <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600 text-sm font-medium">
+            </div>
+          </StaggerItem>
+          <StaggerItem>
+            <div className="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden relative shadow-md">
+              <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600 text-sm font-medium">
                 [Reception Photo]
               </div>
-          </div>
-          <div className="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden relative shadow-md">
-             <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600 text-sm font-medium">
+            </div>
+          </StaggerItem>
+          <StaggerItem>
+            <div className="aspect-[4/3] rounded-2xl bg-slate-200 overflow-hidden relative shadow-md">
+              <div className="absolute inset-0 bg-slate-300 flex items-center justify-center text-slate-600 text-sm font-medium">
                 [Clinic Building Photo]
               </div>
-          </div>
-        </div>
+            </div>
+          </StaggerItem>
+        </StaggerContainer>
       </section>
 
       {/* Google Reviews */}
       <section className="bg-slate-100 py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <SlideUp className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Patient Reviews</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
               Read what our patients have to say about their experience at Choudhury Clinic.
             </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-10">
+          </SlideUp>
+          <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-10">
             {reviews.map((review) => (
-              <div key={review.id} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col h-full">
+              <StaggerItem key={review.id} className="h-full">
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col h-full hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-1 mb-3 text-yellow-400">
                   {[...Array(review.rating)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
@@ -184,9 +204,10 @@ export default function Home() {
                   <p className="font-semibold text-slate-900 text-sm">{review.patientName}</p>
                   <p className="text-xs text-slate-600">{review.visitReason} • {review.relativeTime}</p>
                 </div>
-              </div>
+                </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
           <div className="text-center">
             <a
               href="https://maps.app.goo.gl/VU11cFoZono364GH9"
@@ -203,7 +224,7 @@ export default function Home() {
 
       {/* Location Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-         <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row">
+         <SlideUp className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row">
             <div className="lg:w-1/3 p-10 flex flex-col justify-center bg-primary text-white">
               <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
               <div className="space-y-6">
@@ -242,7 +263,7 @@ export default function Home() {
                   referrerPolicy="no-referrer-when-downgrade"
                />
             </div>
-         </div>
+         </SlideUp>
       </section>
     </div>
   );
