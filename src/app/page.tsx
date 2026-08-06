@@ -267,8 +267,8 @@ export default function Home() {
           </div>
 
           {/* Right Column: Rich Cards Grid */}
-          <div className="lg:col-span-8">
-            <StaggerContainer className="grid sm:grid-cols-2 gap-6 relative">
+          <div className="lg:col-span-8 overflow-hidden">
+            <StaggerContainer className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:pb-0 sm:mx-0 sm:px-0 sm:overflow-visible sm:flex-none [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               {[
                 { 
                   icon: LaparoscopyIcon, 
@@ -327,7 +327,7 @@ export default function Home() {
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
-                  <StaggerItem key={i} className={`${i % 2 !== 0 ? 'sm:mt-12' : ''}`}>
+                  <StaggerItem key={i} className={`flex-shrink-0 w-[85vw] sm:w-auto snap-center sm:snap-align-none ${i % 2 !== 0 ? 'sm:mt-12' : ''}`}>
                     <div className={`group h-full relative bg-white rounded-[2rem] p-8 border ${item.border} transition-all duration-300 ${item.hover} hover:shadow-xl overflow-hidden flex flex-col`}>
                       {/* Decorative Background Blob */}
                       <div className={`absolute -right-8 -top-8 w-32 h-32 rounded-full ${item.bg} opacity-50 transition-transform duration-500 group-hover:scale-150 z-0`}></div>
@@ -386,9 +386,9 @@ export default function Home() {
       <YouTubeVideos />
 
       {/* Location Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SlideUp className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row">
-          <div className="lg:w-1/3 p-10 flex flex-col justify-center bg-primary text-white">
+      <section className="sm:container sm:mx-auto sm:px-6 lg:px-8">
+        <SlideUp className="bg-white sm:rounded-3xl sm:shadow-xl sm:border sm:border-slate-200 overflow-hidden flex flex-col lg:flex-row">
+          <div className="lg:w-1/3 p-8 sm:p-10 flex flex-col justify-center bg-primary text-white">
             <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
             <div className="space-y-6">
               <div className="flex gap-4">
