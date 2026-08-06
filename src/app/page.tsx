@@ -11,21 +11,18 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-20 pb-20">
       {/* Hero Section */}
-      <section className="relative bg-theme-dark text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-[url('/images/doctors/opd.webp')] bg-cover bg-center" />
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 flex flex-col items-center text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 text-red-400 font-medium text-sm mb-8 border border-red-500/20">
-            <Phone className="h-4 w-4" />
-            24/7 Emergency Care: 0300 8775530
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl">
+      <section className="relative -mt-20 pt-20 min-h-screen flex flex-col items-center justify-center text-white overflow-hidden z-0">
+        <div className="absolute inset-0 bg-[url('/images/doctors/opd.webp')] bg-cover bg-center bg-fixed z-0" />
+        <div className="absolute inset-0 bg-black/50 z-0" />
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl opacity-0-init animate-fade-in-up animation-delay-150">
             Advanced Laparoscopic & <br className="hidden md:block" />
             <span className="text-secondary">Gynecological Care</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10">
+          <p className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 opacity-0-init animate-fade-in-up animation-delay-300">
             Providing state-of-the-art surgical facilities and compassionate maternity care in a clean, modern environment.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 opacity-0-init animate-fade-in-up animation-delay-450">
             <a
               href={generalWaLink}
               target="_blank"

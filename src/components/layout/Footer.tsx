@@ -1,19 +1,19 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-theme-dark text-slate-300 py-12 border-t border-slate-800">
+    <footer className="bg-[#021817] text-slate-300 py-12 border-t border-[#042f2e]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
+
           {/* About Section */}
           <div>
-            <div className="flex items-center gap-2 mb-4 text-white">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary font-bold">
-                CC
+            <div className="flex items-center gap-3 mb-4 text-white">
+              <div className="relative h-24 w-64 flex-shrink-0">
+                <Image src="/images/logo.png" alt="Choudhury Clinic Logo" fill className="object-contain" />
               </div>
-              <span className="text-xl font-bold">Choudhury Clinic</span>
             </div>
             <p className="text-sm text-slate-400 mb-6">
               Advanced Laparoscopic & Gynecological Care providing state-of-the-art facilities and compassionate healthcare to our community.
@@ -68,21 +68,21 @@ export default function Footer() {
 
           {/* Clinic Hours */}
           <div>
-            <h3 className="text-white font-semibold mb-4">OPD Timings</h3>
+            <h3 className="text-white font-semibold mb-4">Clinic Hours</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex justify-between items-center border-b border-slate-800 pb-2">
+              <li className="flex justify-between items-center border-b border-[#042f2e] pb-2">
                 <span className="flex items-center gap-2"><Clock className="h-4 w-4 text-slate-400" /> Monday</span>
                 <span className="text-white text-xs">11:00 AM - 11:00 PM</span>
               </li>
-              <li className="flex justify-between items-center border-b border-slate-800 pb-2">
+              <li className="flex justify-between items-center border-b border-[#042f2e] pb-2">
                 <span className="flex items-center gap-2"><Clock className="h-4 w-4 text-slate-400" /> Tue - Thu</span>
                 <span className="text-white text-xs">11:00 AM - 10:30 PM</span>
               </li>
-              <li className="flex justify-between items-center border-b border-slate-800 pb-2">
+              <li className="flex justify-between items-center border-b border-[#042f2e] pb-2">
                 <span className="flex items-center gap-2"><Clock className="h-4 w-4 text-slate-400" /> Friday</span>
                 <span className="text-white text-xs">02:00 PM - 10:00 PM</span>
               </li>
-              <li className="flex justify-between items-center border-b border-slate-800 pb-2">
+              <li className="flex justify-between items-center border-b border-[#042f2e] pb-2">
                 <span className="flex items-center gap-2"><Clock className="h-4 w-4 text-slate-400" /> Saturday</span>
                 <span className="text-white text-xs">12:00 AM - 10:30 PM</span>
               </li>
