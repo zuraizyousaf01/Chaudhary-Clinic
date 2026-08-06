@@ -1,15 +1,29 @@
 import { CheckCircle2, ShieldPlus, Clock } from "lucide-react";
+import { SlideUp } from "@/components/ui/animations/SlideUp";
 
 export default function AboutPage() {
   return (
-    <div className="py-12 lg:py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">About Choudhury Clinic</h1>
-          <p className="text-lg text-slate-600">
-            Dedicated to providing advanced surgical and maternal care with a commitment to patient safety and hygiene.
-          </p>
+    <div className="flex flex-col min-h-screen bg-slate-50">
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-[#021817] text-white overflow-hidden">
+        {/* Subtle background gradient blob */}
+        <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 rounded-full bg-secondary/20 blur-3xl" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <SlideUp>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
+              About <span className="text-secondary">Choudhury Clinic</span>
+            </h1>
+            <p className="text-lg md:text-xl text-teal-50 max-w-2xl mx-auto leading-relaxed">
+              Dedicated to providing advanced surgical and maternal care with a commitment to patient safety and hygiene.
+            </p>
+          </SlideUp>
         </div>
+      </section>
+
+      <section className="py-20 -mt-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
 
         <div className="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12 mb-12">
           <h2 className="text-2xl font-bold text-primary mb-6 border-b pb-4">Our Vision</h2>
@@ -68,7 +82,8 @@ export default function AboutPage() {
           </div>
         </div>
 
-      </div>
+        </div>
+      </section>
     </div>
   );
 }

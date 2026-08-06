@@ -57,94 +57,94 @@ export default function Home() {
         <StaggerContainer className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Surgeon Specialist */}
           <StaggerItem>
-          <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
-            <div className="h-80 lg:h-96 bg-slate-200 relative">
-              <Image 
-                src="/images/doctors/dr-waseem.webp" 
-                alt="Dr. Waseem Abbas Chaudhary" 
-                fill 
-                className="object-cover object-[center_15%]"
-              />
-            </div>
-            <div className="p-8 flex-1 flex flex-col">
-              <div className="mb-4 md:min-h-[180px]">
-                <span className="inline-block px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-bold uppercase tracking-wider mb-2">General, Advance Laparoscopic & Gynecologic Surgery</span>
-                <h2 className="text-3xl font-bold text-slate-900">Dr. Waseem Abbas Chaudhary</h2>
-                <p className="text-secondary font-medium">Minimally Invasive Surgery Specialist</p>
+            <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300">
+              <div className="h-80 lg:h-96 bg-slate-200 relative">
+                <Image
+                  src="/images/doctors/dr-waseem.webp"
+                  alt="Dr. Waseem Abbas Chaudhary"
+                  fill
+                  className="object-cover object-[center_15%]"
+                />
               </div>
+              <div className="p-8 flex-1 flex flex-col">
+                <div className="mb-4 md:min-h-[180px]">
+                  <span className="inline-block px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-bold uppercase tracking-wider mb-2">General, Advance Laparoscopic & Gynecologic Surgery</span>
+                  <h2 className="text-3xl font-bold text-slate-900">Dr. Waseem Abbas Chaudhary</h2>
+                  <p className="text-secondary font-medium">Minimally Invasive Surgery Specialist</p>
+                </div>
 
-              <div className="space-y-4 mb-8 flex-1">
-                <div className="flex gap-3">
-                  <GraduationCap className="h-5 w-5 text-slate-400 shrink-0" />
-                  <p className="text-sm text-slate-600">MBBS, FCPS (General Surgery)</p>
+                <div className="space-y-4 mb-8 flex-1">
+                  <div className="flex gap-3">
+                    <GraduationCap className="h-5 w-5 text-slate-400 shrink-0" />
+                    <p className="text-sm text-slate-600">MBBS, FCPS (General Surgery)</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <Award className="h-5 w-5 text-slate-400 shrink-0" />
+                    <p className="text-sm text-slate-600">Over 10 years of experience in minimally invasive surgical procedures.</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <Stethoscope className="h-5 w-5 text-slate-400 shrink-0" />
+                    <p className="text-sm text-slate-600">Specializes in Cholecystectomy (Gallbladder), Hernia Repair, Appendectomy, and diagnostic laparoscopy.</p>
+                  </div>
                 </div>
-                <div className="flex gap-3">
-                  <Award className="h-5 w-5 text-slate-400 shrink-0" />
-                  <p className="text-sm text-slate-600">Over 10 years of experience in minimally invasive surgical procedures.</p>
-                </div>
-                <div className="flex gap-3">
-                  <Stethoscope className="h-5 w-5 text-slate-400 shrink-0" />
-                  <p className="text-sm text-slate-600">Specializes in Cholecystectomy (Gallbladder), Hernia Repair, Appendectomy, and diagnostic laparoscopy.</p>
-                </div>
+
+                <a
+                  href={lapWaLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white shadow-md hover:bg-primary-hover transition-colors"
+                >
+                  Book Consultation
+                  <ArrowRight className="h-4 w-4" />
+                </a>
               </div>
-
-              <a
-                href={lapWaLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white shadow-md hover:bg-primary-hover transition-colors"
-              >
-                Book Consultation
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
             </div>
           </StaggerItem>
 
           {/* Gynecology Specialist */}
           <StaggerItem>
             <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 duration-300 h-full">
-            <div className="h-80 lg:h-96 bg-slate-200 relative">
-              <Image 
-                src="/images/doctors/dr-sehar.webp" 
-                alt="Dr. Sehar Waseem Abbas Chaudhary" 
-                fill 
-                className="object-cover object-[center_15%]"
-              />
-            </div>
-            <div className="p-8 flex-1 flex flex-col">
-              <div className="mb-4 md:min-h-[180px]">
-                <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-600 text-xs font-bold uppercase tracking-wider mb-2">Obstetrician & Gynecologist</span>
-                <h2 className="text-3xl font-bold text-slate-900">Dr. Sehar Waseem Abbas Chaudhary</h2>
-                <p className="text-secondary font-medium">Women's Health & Maternity Care</p>
+              <div className="h-80 lg:h-96 bg-slate-200 relative">
+                <Image
+                  src="/images/doctors/dr-sehar.webp"
+                  alt="Dr. Sehar Waseem Abbas Chaudhary"
+                  fill
+                  className="object-cover object-[center_15%]"
+                />
               </div>
+              <div className="p-8 flex-1 flex flex-col">
+                <div className="mb-4 md:min-h-[180px]">
+                  <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-600 text-xs font-bold uppercase tracking-wider mb-2">Obstetrician & Gynecologist</span>
+                  <h2 className="text-3xl font-bold text-slate-900">Dr. Sehar Waseem Abbas Chaudhary</h2>
+                  <p className="text-secondary font-medium">Women's Health & Maternity Care</p>
+                </div>
 
-              <div className="space-y-4 mb-8 flex-1">
-                <div className="flex gap-3">
-                  <GraduationCap className="h-5 w-5 text-slate-400 shrink-0" />
-                  <p className="text-sm text-slate-600">MBBS, FCPS (Gynecology & Obstetrics)</p>
+                <div className="space-y-4 mb-8 flex-1">
+                  <div className="flex gap-3">
+                    <GraduationCap className="h-5 w-5 text-slate-400 shrink-0" />
+                    <p className="text-sm text-slate-600">MBBS, FCPS (Gynecology & Obstetrics)</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <Award className="h-5 w-5 text-slate-400 shrink-0" />
+                    <p className="text-sm text-slate-600">Expert in handling high-risk pregnancies and complex gynecological surgeries.</p>
+                  </div>
+                  <div className="flex gap-3">
+                    <Stethoscope className="h-5 w-5 text-slate-400 shrink-0" />
+                    <p className="text-sm text-slate-600">Specializes in normal/cesarean deliveries, PCOS management, infertility treatments, and comprehensive prenatal, antenatal, and postnatal care.</p>
+                  </div>
                 </div>
-                <div className="flex gap-3">
-                  <Award className="h-5 w-5 text-slate-400 shrink-0" />
-                  <p className="text-sm text-slate-600">Expert in handling high-risk pregnancies and complex gynecological surgeries.</p>
-                </div>
-                <div className="flex gap-3">
-                  <Stethoscope className="h-5 w-5 text-slate-400 shrink-0" />
-                  <p className="text-sm text-slate-600">Specializes in normal/cesarean deliveries, PCOS management, infertility treatments, and comprehensive prenatal, antenatal, and postnatal care.</p>
-                </div>
+
+                <a
+                  href={gynWaLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white shadow-md hover:bg-primary-hover transition-colors"
+                >
+                  Book Consultation
+                  <ArrowRight className="h-4 w-4" />
+                </a>
               </div>
-
-              <a
-                href={gynWaLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-6 py-4 text-sm font-semibold text-white shadow-md hover:bg-primary-hover transition-colors"
-              >
-                Book Consultation
-                <ArrowRight className="h-4 w-4" />
-              </a>
             </div>
-          </div>
           </StaggerItem>
         </StaggerContainer>
       </section>
@@ -195,16 +195,16 @@ export default function Home() {
             {reviews.map((review) => (
               <StaggerItem key={review.id} className="h-full">
                 <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col h-full hover:shadow-md transition-shadow">
-                <div className="flex items-center gap-1 mb-3 text-yellow-400">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-current" />
-                  ))}
-                </div>
-                <p className="text-slate-700 text-sm mb-4 max-h-32 overflow-y-auto pr-2 flex-grow">"{review.reviewText}"</p>
-                <div className="mt-auto border-t border-slate-200 pt-4">
-                  <p className="font-semibold text-slate-900 text-sm">{review.patientName}</p>
-                  <p className="text-xs text-slate-600">{review.visitReason} • {review.relativeTime}</p>
-                </div>
+                  <div className="flex items-center gap-1 mb-3 text-yellow-400">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-slate-700 text-sm mb-4 max-h-32 overflow-y-auto pr-2 flex-grow">"{review.reviewText}"</p>
+                  <div className="mt-auto border-t border-slate-200 pt-4">
+                    <p className="font-semibold text-slate-900 text-sm">{review.patientName}</p>
+                    <p className="text-xs text-slate-600">{review.visitReason} • {review.relativeTime}</p>
+                  </div>
                 </div>
               </StaggerItem>
             ))}
@@ -228,46 +228,46 @@ export default function Home() {
 
       {/* Location Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
-         <SlideUp className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row">
-            <div className="lg:w-1/3 p-10 flex flex-col justify-center bg-primary text-white">
-              <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <MapPin className="h-6 w-6 text-secondary shrink-0" />
-                  <div>
-                    <h4 className="font-semibold mb-1">Location</h4>
-                    <p className="text-slate-300 text-sm">Ground Floor, Khan Medical City, Hall # 1, Nishtar Rd, Al Rahim Colony, Multan, 60000, Pakistan</p>
-                  </div>
+        <SlideUp className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row">
+          <div className="lg:w-1/3 p-10 flex flex-col justify-center bg-primary text-white">
+            <h2 className="text-3xl font-bold mb-6">Visit Us</h2>
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <MapPin className="h-6 w-6 text-secondary shrink-0" />
+                <div>
+                  <h4 className="font-semibold mb-1">Location</h4>
+                  <p className="text-slate-300 text-sm">Ground Floor, Khan Medical City, Hall # 1, Nishtar Rd, Al Rahim Colony, Multan, 60000, Pakistan</p>
                 </div>
-                <div className="flex gap-4">
-                  <Calendar className="h-6 w-6 text-secondary shrink-0" />
-                  <div>
-                    <h4 className="font-semibold mb-1">Appointments</h4>
-                    <p className="text-slate-300 text-sm mb-4">Walk-ins welcome, but booking in advance via WhatsApp is recommended to avoid waiting.</p>
-                    <a
-                      href={generalWaLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-sm font-bold text-white hover:bg-[#20b858] transition-colors"
-                    >
-                      Book Now
-                    </a>
-                  </div>
+              </div>
+              <div className="flex gap-4">
+                <Calendar className="h-6 w-6 text-secondary shrink-0" />
+                <div>
+                  <h4 className="font-semibold mb-1">Appointments</h4>
+                  <p className="text-slate-300 text-sm mb-4">Walk-ins welcome, but booking in advance via WhatsApp is recommended to avoid waiting.</p>
+                  <a
+                    href={generalWaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-4 py-2 text-sm font-bold text-white hover:bg-[#20b858] transition-colors"
+                  >
+                    Book Now
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="lg:w-2/3 h-[400px] lg:h-auto bg-slate-200">
-               <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110190.2526569772!2d71.46351059999999!3d30.198425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b369c00bcfcc9%3A0xc3f609b85c184074!2sKhan%20Medical%20City!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-               />
-            </div>
-         </SlideUp>
+          </div>
+          <div className="lg:w-2/3 h-[400px] lg:h-auto bg-slate-200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110190.2526569772!2d71.46351059999999!3d30.198425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b369c00bcfcc9%3A0xc3f609b85c184074!2sKhan%20Medical%20City!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </SlideUp>
       </section>
     </div>
   );

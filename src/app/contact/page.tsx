@@ -1,17 +1,31 @@
 import { Phone, MessageCircle, MapPin, Clock, ArrowRight } from "lucide-react";
+import { SlideUp } from "@/components/ui/animations/SlideUp";
 
 export default function ContactPage() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
 
   return (
-    <div className="py-12 lg:py-24 bg-slate-50 min-h-screen">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Contact & Location</h1>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Get in touch with us for appointments, inquiries, or emergencies. We are here to help.
-          </p>
+    <div className="flex flex-col min-h-screen bg-slate-50">
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-[#021817] text-white overflow-hidden">
+        {/* Subtle background gradient blob */}
+        <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 rounded-full bg-secondary/20 blur-3xl" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <SlideUp>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
+              Contact & <span className="text-secondary">Location</span>
+            </h1>
+            <p className="text-lg md:text-xl text-teal-50 max-w-2xl mx-auto leading-relaxed">
+              Get in touch with us for appointments, inquiries, or emergencies. We are here to help.
+            </p>
+          </SlideUp>
         </div>
+      </section>
+
+      <section className="py-20 -mt-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {/* Contact Details Cards */}
@@ -81,7 +95,8 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+      </section>
     </div>
   );
 }
