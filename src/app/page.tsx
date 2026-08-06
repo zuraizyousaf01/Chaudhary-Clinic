@@ -22,7 +22,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50 z-0" />
         <StaggerContainer className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
           <StaggerItem>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl">
               Advanced Laparoscopic & <br className="hidden md:block" />
               <span className="text-secondary">Gynecological Care</span>
             </h1>
@@ -57,7 +57,7 @@ export default function Home() {
             {/* Dual Specialists Section */}
       <div className="relative z-10 -mt-16 rounded-t-[3rem] overflow-hidden shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.1)]">
         {/* Dr. Waseem Section */}
-      <section className="py-24 relative overflow-hidden bg-white">
+      <section className="py-16 lg:py-24 relative overflow-hidden bg-white">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50/50 rounded-l-[100px] -z-10 hidden lg:block" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -66,7 +66,7 @@ export default function Home() {
             <SlideUp className="order-2 lg:order-1">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl transform translate-x-4 translate-y-4" />
-                <div className="relative h-[500px] lg:h-[650px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <div className="relative h-[400px] lg:h-[650px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                   <Image 
                     src="/images/doctors/dr-waseem.webp" 
                     alt="Dr. Waseem Abbas Chaudhary" 
@@ -145,7 +145,7 @@ export default function Home() {
       </section>
 
         {/* Dr. Sehar Section */}
-      <section className="py-24 relative overflow-hidden bg-slate-50">
+      <section className="py-16 lg:py-24 relative overflow-hidden bg-slate-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             
@@ -209,7 +209,7 @@ export default function Home() {
             <SlideUp delay={0.2} className="order-2 lg:order-2">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-tl from-pink-200 to-transparent rounded-3xl transform -translate-x-4 translate-y-4" />
-                <div className="relative h-[500px] lg:h-[650px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <div className="relative h-[400px] lg:h-[650px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                   <Image 
                     src="/images/doctors/dr-sehar.webp" 
                     alt="Dr. Sehar Waseem Abbas Chaudhary" 
@@ -268,6 +268,11 @@ export default function Home() {
 
           {/* Right Column: Rich Cards Grid */}
           <div className="lg:col-span-8 overflow-hidden">
+            {/* Mobile swipe hint */}
+            <div className="flex items-center gap-2 mb-4 text-slate-500 sm:hidden animate-pulse">
+              <span className="text-xs font-semibold uppercase tracking-wider">Swipe to explore</span>
+              <ArrowRight className="h-4 w-4" />
+            </div>
             <StaggerContainer className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:pb-0 sm:mx-0 sm:px-0 sm:overflow-visible sm:flex-none [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               {[
                 { 
@@ -417,13 +422,13 @@ export default function Home() {
           </div>
           <div className="lg:w-2/3 h-[400px] lg:h-auto bg-slate-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110190.2526569772!2d71.46351059999999!3d30.198425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b369c00bcfcc9%3A0xc3f609b85c184074!2sKhan%20Medical%20City!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1392.909247323962!2d71.45016715976618!3d30.201893992782114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b33ef3a57195b%3A0xcf432f53410b2841!2sChoudhury%20Surgical%20%2C%20Gyne%20%26%20Maternity%20Clinic%20Dr%20Waseem%20Abbas%20Chaudhary%2C%20Dr%20Sehar%20Waseem%20Abbas%20chaudhary!5e0!3m2!1sen!2s!4v1786023729029!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
             />
           </div>
         </SlideUp>

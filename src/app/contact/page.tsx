@@ -86,11 +86,11 @@ export default function ContactPage() {
             </div>
             <div className="flex-1 min-h-[400px] bg-slate-200 relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110190.2526569772!2d71.46351059999999!3d30.198425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b369c00bcfcc9%3A0xc3f609b85c184074!2sKhan%20Medical%20City!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1392.909247323962!2d71.45016715976618!3d30.201893992782114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b33ef3a57195b%3A0xcf432f53410b2841!2sChoudhury%20Surgical%20%2C%20Gyne%20%26%20Maternity%20Clinic%20Dr%20Waseem%20Abbas%20Chaudhary%2C%20Dr%20Sehar%20Waseem%20Abbas%20chaudhary!5e0!3m2!1sen!2s!4v1786023729029!5m2!1sen!2s"
                 className="absolute inset-0 w-full h-full border-0"
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerPolicy="strict-origin-when-cross-origin"
               />
             </div>
           </div>

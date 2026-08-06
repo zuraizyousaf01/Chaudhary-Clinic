@@ -77,13 +77,13 @@ export function ReviewCarousel({ reviews }: { reviews: Review[] }) {
 
 function ReviewCard({ review }: { review: Review }) {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col h-[280px] hover:shadow-md transition-shadow">
+    <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col min-h-[280px] md:h-[280px] hover:shadow-md transition-shadow">
       <div className="flex items-center gap-1 mb-3 text-yellow-400">
         {[...Array(review.rating)].map((_, i) => (
           <Star key={i} className="h-4 w-4 fill-current" />
         ))}
       </div>
-      <p className="text-slate-700 text-sm mb-4 overflow-y-auto pr-2 flex-grow">"{review.reviewText}"</p>
+      <p className="text-slate-700 text-sm mb-4 md:overflow-y-auto pr-2 flex-grow">"{review.reviewText}"</p>
       <div className="mt-auto border-t border-slate-200 pt-4 shrink-0">
         <p className="font-semibold text-slate-900 text-sm">{review.patientName}</p>
         <p className="text-xs text-slate-600">{review.visitReason} • {review.relativeTime}</p>

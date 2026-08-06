@@ -67,11 +67,11 @@ export default function Header() {
             href="https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all"
+            className="flex items-center gap-2 rounded-full bg-primary px-4 sm:px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all"
           >
             <Calendar className="h-4 w-4" />
             <span className="hidden sm:block">Book Appointment</span>
-            <span className="sm:hidden">Book</span>
+            <span className="sm:hidden">Book Now</span>
           </a>
           {/* Mobile Menu Toggle */}
           <button 

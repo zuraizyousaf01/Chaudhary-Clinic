@@ -32,12 +32,12 @@ export default function AboutPage() {
           <SlideUp>
             <div className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden mb-16">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-64 md:h-auto">
+                <div className="relative h-80 md:h-full min-h-[300px]">
                   <Image 
                     src="/images/doctors/Doctors_vision.jpeg"
                     alt="Doctors Vision"
                     fill
-                    className="object-cover"
+                    className="object-cover object-[center_20%]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
