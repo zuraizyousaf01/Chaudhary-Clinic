@@ -16,7 +16,7 @@ export default function Home() {
   const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
 
   return (
-    <div className="flex flex-col pb-20">
+    <div className="flex flex-col pb-0 sm:pb-20">
       {/* Hero Section */}
       <section className="relative -mt-20 pt-20 min-h-screen flex flex-col items-center justify-center text-white overflow-hidden z-0">
         <div className="absolute inset-0 bg-[url('/images/doctors/opd.webp')] bg-cover bg-center bg-fixed z-0" />
@@ -95,10 +95,10 @@ export default function Home() {
                 <Stethoscope className="h-4 w-4" />
                 General, Laparoscopic & Gynecologic Surgery
               </span>
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
                 Dr. Waseem Abbas Chaudhary
               </h2>
-              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+              <p className="text-base text-slate-600 mb-6 leading-relaxed">
                 Minimally Invasive Surgery Specialist dedicated to providing advanced surgical care with reduced recovery times and optimal patient outcomes.
               </p>
 
@@ -156,10 +156,10 @@ export default function Home() {
                 <HeartPulse className="h-4 w-4" />
                 Obstetrics & Gynecology
               </span>
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3 tracking-tight">
                 Dr. Sehar Waseem Abbas Chaudhary
               </h2>
-              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+              <p className="text-base text-slate-600 mb-6 leading-relaxed">
                 Expert in comprehensive women's health, maternity care, and handling complex gynecological procedures with compassion.
               </p>
 
