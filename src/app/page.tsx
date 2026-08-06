@@ -5,6 +5,7 @@ import reviews from "../../public/data/reviews.json";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { StaggerContainer, StaggerItem } from "@/components/ui/animations/StaggerContainer";
+import { YouTubeVideos } from "@/components/ui/YouTubeVideos";
 
 export default function Home() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
@@ -221,6 +222,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* YouTube Updates */}
+      <YouTubeVideos />
 
       {/* Location Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
