@@ -6,6 +6,10 @@ import Link from 'next/link';
 import { Phone, Calendar, Menu, X, MessageCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { Playfair_Display } from 'next/font/google';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const playfair = Playfair_Display({ subsets: ['latin'] });
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,7 +42,8 @@ export default function Header() {
   }
 
   return (
-    <header className={`sticky top-0 z-50 w-full transition-transform duration-500 transition-colors ${headerClasses}`}>
+    <>
+      <header className={`sticky top-0 z-50 w-full transition-transform duration-500 transition-colors ${headerClasses}`}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
@@ -83,22 +88,94 @@ export default function Header() {
         </div>
       </div>
 
+      </header>
+
       {/* Mobile Navigation Dropdown */}
-      {mobileMenuOpen && (
-        <div className="md:hidden border-t border-[#042f2e] bg-[#021817] px-4 py-4 space-y-4 shadow-lg absolute w-full left-0">
-          <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block text-teal-50 hover:text-white font-medium">Home</Link>
-          <Link href="/doctors" onClick={() => setMobileMenuOpen(false)} className="block text-teal-50 hover:text-white font-medium">Doctors</Link>
-          <Link href="/services" onClick={() => setMobileMenuOpen(false)} className="block text-teal-50 hover:text-white font-medium">Services</Link>
-          <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="block text-teal-50 hover:text-white font-medium">About</Link>
-          <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="block text-teal-50 hover:text-white font-medium">Contact</Link>
-          <div className="pt-4 border-t border-[#042f2e]">
-            <a href="tel:03008775530" className="flex items-center gap-2 mt-2 p-4 bg-[#042f2e]/50 rounded-lg text-teal-50 font-medium hover:bg-[#042f2e] transition-colors">
-              <Phone className="h-5 w-5 text-primary" />
-              <span>Emergency: 0300 8775530</span>
-            </a>
-          </div>
-        </div>
-      )}
-    </header>
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed inset-0 z-[100] bg-[#1d242b] flex flex-col md:hidden"
+          >
+            {/* Top Bar with Close button */}
+            <motion.div 
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.4 }}
+              className="flex items-center justify-start p-8"
+            >
+              <button 
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-3 text-[#8B95A1] hover:text-white transition-all group"
+              >
+                <span className="text-[15px] font-normal tracking-wide group-hover:tracking-wider transition-all">Close</span>
+                <X className="h-[22px] w-[22px] transition-transform duration-300 group-hover:rotate-90" strokeWidth={1.5} />
+              </button>
+            </motion.div>
+
+            {/* Links */}
+            <div className="flex-1 flex flex-col px-8 mt-10 space-y-4">
+              {[
+                { label: 'Home', href: '/', active: true },
+                { label: 'Doctors', href: '/doctors' },
+                { label: 'Services', href: '/services' },
+                { label: 'About', href: '/about' },
+                { label: 'Contact', href: '/contact' },
+              ].map((link, i) => (
+                <motion.div
+                  key={link.label}
+                  initial={{ opacity: 0, x: -30, filter: 'blur(4px)' }}
+                  animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
+                  exit={{ opacity: 0, x: -20, filter: 'blur(4px)' }}
+                  transition={{ delay: 0.1 + i * 0.1, duration: 0.6, type: "spring", bounce: 0.4 }}
+                  whileHover={{ x: 10, scale: 1.02 }}
+                >
+                  <Link 
+                    href={link.href} 
+                    onClick={() => setMobileMenuOpen(false)} 
+                    className={`block text-[32px] tracking-wide transition-colors ${playfair.className} ${link.active ? 'text-white' : 'text-[#8B95A1] hover:text-white'}`}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Bottom Section */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="px-8 pb-14"
+            >
+              <motion.div 
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
+                className="w-full h-[1px] bg-[#2a343d] mb-7 origin-left"
+              ></motion.div>
+              <div className="flex items-center gap-5 text-white">
+                <motion.a whileHover={{ scale: 1.2, rotate: 5 }} whileTap={{ scale: 0.9 }} href="#" className="hover:text-gray-300 transition-colors">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-[15px] w-[15px]"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </motion.a>
+                <motion.a whileHover={{ scale: 1.2, rotate: -5 }} whileTap={{ scale: 0.9 }} href="#" className="hover:text-gray-300 transition-colors">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-[15px] w-[15px]"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                </motion.a>
+                <motion.a whileHover={{ scale: 1.2, rotate: 5 }} whileTap={{ scale: 0.9 }} href="#" className="hover:text-gray-300 transition-colors">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-[15px] w-[15px]"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg>
+                </motion.a>
+                <motion.a whileHover={{ scale: 1.2, rotate: -5 }} whileTap={{ scale: 0.9 }} href="#" className="hover:text-gray-300 transition-colors">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-[15px] w-[15px]"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </motion.a>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
