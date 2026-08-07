@@ -250,7 +250,7 @@ export default function Home() {
         <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 -z-10 pointer-events-none" />
         
         {/* Soft gradient transition into the FAQ section below */}
-        <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-[#F5EFE6] to-transparent pointer-events-none z-0" />
+        <div className="absolute bottom-0 left-0 w-full h-12 sm:h-16 bg-gradient-to-t from-[#F5EFE6] to-transparent pointer-events-none z-0" />
         
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start relative z-10">
           {/* Left Column: Title & Text */}
