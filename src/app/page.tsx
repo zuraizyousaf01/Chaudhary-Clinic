@@ -58,9 +58,13 @@ export default function Home() {
       {/* Dual Specialists Section */}
       <div className="relative z-10 overflow-hidden">
         {/* Dr. Waseem Section */}
-      <section className="py-10 lg:py-16 relative overflow-hidden bg-white">
+      <section className="py-10 lg:py-16 relative overflow-hidden bg-white z-0">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50/50 rounded-l-[100px] -z-10 hidden lg:block" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        
+        {/* Soft gradient transition into Dr. Sehar's section below */}
+        <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-[#FAF8F5] to-transparent pointer-events-none z-0" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Image Side */}
@@ -146,8 +150,11 @@ export default function Home() {
       </section>
 
         {/* Dr. Sehar Section */}
-      <section className="py-10 lg:py-16 relative overflow-hidden bg-[#FAF8F5]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <section className="py-10 lg:py-16 relative overflow-hidden bg-[#FAF8F5] z-0">
+        {/* Soft gradient transition into Services section below */}
+        <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none z-0" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Content Side */}
@@ -242,7 +249,10 @@ export default function Home() {
         {/* Subtle background blob */}
         <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 -z-10 pointer-events-none" />
         
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        {/* Soft gradient transition into the FAQ section below */}
+        <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-[#F5EFE6] to-transparent pointer-events-none z-0" />
+        
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start relative z-10">
           {/* Left Column: Title & Text */}
           <div className="lg:col-span-4 lg:sticky lg:top-24">
             <FadeIn>
@@ -367,8 +377,14 @@ export default function Home() {
 
       {/* Google Reviews */}
 
-      <section className="bg-[#FAF8F5] py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#FAF8F5] py-20 relative overflow-hidden z-0">
+        {/* Soft gradient transition from the FAQ section above */}
+        <div className="absolute top-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-b from-[#F5EFE6] to-transparent pointer-events-none z-0" />
+        
+        {/* Soft gradient transition into the YouTube section below */}
+        <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none z-0" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <SlideUp className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Patient Reviews</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
