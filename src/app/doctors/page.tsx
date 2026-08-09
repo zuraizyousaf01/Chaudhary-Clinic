@@ -33,7 +33,7 @@ export default function DoctorsPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             
             {/* Image Side */}
-            <SlideUp className="order-2 lg:order-1">
+            <SlideUp className="order-1 lg:order-1">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl transform translate-x-4 translate-y-4" />
                 <div className="relative h-[500px] lg:h-[650px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
@@ -59,14 +59,14 @@ export default function DoctorsPage() {
             </SlideUp>
 
             {/* Content Side */}
-            <SlideUp delay={0.2} className="order-1 lg:order-2">
+            <SlideUp delay={0.2} className="order-2 lg:order-2">
+              <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+                Dr. Waseem Abbas Chaudhary
+              </h2>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-bold uppercase tracking-wider mb-6">
                 <Stethoscope className="h-4 w-4" />
                 General, Laparoscopic & Gynecologic Surgery
               </span>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                Dr. Waseem Abbas Chaudhary
-              </h2>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 Minimally Invasive Surgery Specialist dedicated to providing advanced surgical care with reduced recovery times and optimal patient outcomes.
               </p>
@@ -120,14 +120,14 @@ export default function DoctorsPage() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             
             {/* Content Side */}
-            <SlideUp className="order-1 lg:order-1">
+            <SlideUp className="order-2 lg:order-1">
+              <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
+                Dr. Sehar Waseem Abbas Chaudhary
+              </h2>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-100 text-pink-600 text-sm font-bold uppercase tracking-wider mb-6">
                 <HeartPulse className="h-4 w-4" />
                 Obstetrics & Gynecology
               </span>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
-                Dr. Sehar Waseem Abbas Chaudhary
-              </h2>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 Expert in comprehensive women's health, maternity care, and handling complex gynecological procedures with compassion.
               </p>
@@ -176,7 +176,7 @@ export default function DoctorsPage() {
             </SlideUp>
 
             {/* Image Side */}
-            <SlideUp delay={0.2} className="order-2 lg:order-2">
+            <SlideUp delay={0.2} className="order-1 lg:order-2">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-tl from-pink-200 to-transparent rounded-3xl transform -translate-x-4 translate-y-4" />
                 <div className="relative h-[500px] lg:h-[650px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">

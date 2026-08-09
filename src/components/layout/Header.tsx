@@ -116,32 +116,53 @@ export default function Header() {
               </button>
             </motion.div>
 
-            {/* Links */}
-            <div className="flex-1 flex flex-col px-8 mt-10 space-y-4">
-              {[
-                { label: 'Home', href: '/', active: true },
-                { label: 'Doctors', href: '/doctors' },
-                { label: 'Services', href: '/services' },
-                { label: 'About', href: '/about' },
-                { label: 'Contact', href: '/contact' },
-              ].map((link, i) => (
-                <motion.div
-                  key={link.label}
-                  initial={{ opacity: 0, x: -30, filter: 'blur(4px)' }}
-                  animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
-                  exit={{ opacity: 0, x: -20, filter: 'blur(4px)' }}
-                  transition={{ delay: 0.1 + i * 0.1, duration: 0.6, type: "spring", bounce: 0.4 }}
-                  whileHover={{ x: 10, scale: 1.02 }}
-                >
-                  <Link 
-                    href={link.href} 
-                    onClick={() => setMobileMenuOpen(false)} 
-                    className={`block text-[32px] tracking-wide transition-colors ${playfair.className} ${link.active ? 'text-white' : 'text-[#8B95A1] hover:text-white'}`}
+            {/* Links Area */}
+            <div className="flex-1 grid grid-cols-2 px-8 mt-10">
+              <div className="flex flex-col space-y-4">
+                {[
+                  { label: 'Home', href: '/', active: true },
+                  { label: 'Doctors', href: '/doctors' },
+                  { label: 'Services', href: '/services' },
+                  { label: 'About', href: '/about' },
+                  { label: 'Contact', href: '/contact' },
+                ].map((link, i) => (
+                  <motion.div
+                    key={link.label}
+                    initial={{ opacity: 0, x: -30, filter: 'blur(4px)' }}
+                    animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
+                    exit={{ opacity: 0, x: -20, filter: 'blur(4px)' }}
+                    transition={{ delay: 0.1 + i * 0.1, duration: 0.6, type: "spring", bounce: 0.4 }}
+                    whileHover={{ x: 10, scale: 1.02 }}
                   >
-                    {link.label}
+                    <Link 
+                      href={link.href} 
+                      onClick={() => setMobileMenuOpen(false)} 
+                      className={`block text-[28px] sm:text-[32px] tracking-wide transition-colors ${playfair.className} ${link.active ? 'text-white' : 'text-[#8B95A1] hover:text-white'}`}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+              
+              <div className="flex flex-col pl-4 sm:pl-8 border-l border-[#2a343d]/60">
+                <motion.div
+                  initial={{ opacity: 0, x: 30, filter: 'blur(4px)' }}
+                  animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
+                  exit={{ opacity: 0, x: 20, filter: 'blur(4px)' }}
+                  transition={{ delay: 0.4, duration: 0.6, type: "spring", bounce: 0.4 }}
+                  className="mt-2"
+                >
+                  <p className="text-[#8B95A1] text-xs font-semibold uppercase tracking-wider mb-2">Emergency</p>
+                  <Link 
+                    href="tel:03008775530" 
+                    onClick={() => setMobileMenuOpen(false)} 
+                    className={`block text-[20px] sm:text-[24px] tracking-wide text-white hover:text-teal-400 transition-colors ${playfair.className}`}
+                  >
+                    0300 8775530
                   </Link>
                 </motion.div>
-              ))}
+              </div>
             </div>
 
             {/* Bottom Section */}

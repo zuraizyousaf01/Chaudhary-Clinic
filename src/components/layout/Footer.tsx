@@ -95,12 +95,8 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-12 pt-8 border-t border-slate-800 text-sm text-slate-600 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-12 pt-8 border-t border-slate-800 text-sm text-slate-600 flex justify-center items-center">
           <p>&copy; {new Date().getFullYear()} Choudhury Clinic. All rights reserved.</p>
-          <div className="flex gap-4">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-          </div>
         </div>
       </div>
     </footer>
