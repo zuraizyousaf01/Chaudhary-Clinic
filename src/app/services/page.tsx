@@ -100,24 +100,16 @@ export default function ServicesPage() {
                 { image: "/images/services/kidney_stones.png", title: "Kidney & Ureteral Stones" },
                 { image: "/images/services/bladder_stones.png", title: "Bladder Stones" },
                 { image: "/images/services/abdominal_tumor.png", title: "Abdominal Tumors / Masses" },
-              ].map((service, i) => {
-                const Icon = service.icon;
-                return (
+              ].map((service, i) => (
                 <StaggerItem key={i} className="h-full">
                   <div className="bg-white rounded-2xl p-6 h-full shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center group cursor-default">
-                    {service.image ? (
-                      <div className="relative w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm border border-slate-100 group-hover:shadow-md transition-shadow">
-                        <Image src={service.image} alt={service.title} fill className="object-cover" />
-                      </div>
-                    ) : Icon ? (
-                      <div className="relative w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm border border-slate-100 group-hover:shadow-md transition-shadow bg-slate-50 flex items-center justify-center p-2">
-                        <Icon className="w-full h-full" />
-                      </div>
-                    ) : null}
+                    <div className="relative w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm border border-slate-100 group-hover:shadow-md transition-shadow">
+                      <Image src={service.image} alt={service.title} fill className="object-cover" />
+                    </div>
                     <h3 className="text-sm font-bold text-slate-800 leading-tight group-hover:text-primary transition-colors">{service.title}</h3>
                   </div>
                 </StaggerItem>
-              )})}
+              ))}
             </StaggerContainer>
           </div>
 
