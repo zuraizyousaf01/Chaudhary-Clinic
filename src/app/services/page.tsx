@@ -1,5 +1,12 @@
 import { Activity, Baby, ArrowRight } from "lucide-react";
 import { LaparoscopyIcon, GallbladderIcon, HerniaIcon, MaternityIcon, HighRiskPregnancyIcon, GynecologyIcon } from "@/components/ui/icons/MedicalIcons";
+import { 
+  DetailedOvarianTumorIcon, 
+  DetailedLapOvarianCystIcon, 
+  DetailedKidneyStonesIcon, 
+  DetailedBladderStonesIcon, 
+  DetailedAbdominalTumorIcon 
+} from "@/components/ui/icons/SurgicalIcons";
 import Link from "next/link";
 import Image from "next/image";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
@@ -73,23 +80,41 @@ export default function ServicesPage() {
               </FadeIn>
             </div>
             
-            <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               {[
-                { icon: GallbladderIcon, title: "Laparoscopic Cholecystectomy", desc: "Minimally invasive gallbladder removal with minimal scarring and quick recovery." },
-                { icon: HerniaIcon, title: "Hernia Repair", desc: "Advanced laparoscopic techniques for inguinal, umbilical, and incisional hernias." },
-                { icon: LaparoscopyIcon, title: "Laparoscopic Appendectomy", desc: "Safe and rapid removal of the appendix using keyhole surgery." },
-                { icon: LaparoscopyIcon, title: "Diagnostic Laparoscopy", desc: "Exploratory procedures to diagnose unresolved abdominal pain or issues." },
-                { icon: LaparoscopyIcon, title: "General Surgery Options", desc: "Comprehensive care for various general surgical needs beyond laparoscopy." }
+                { image: "/images/services/gallstone.png", title: "Gallstones Treatment" },
+                { image: "/images/services/bile_duct.png", title: "Laparoscopic & Choledochoscopic Bile Duct Surgery" },
+                { image: "/images/services/hernia.png", title: "Hernia Repair" },
+                { image: "/images/services/appendectomy.png", title: "Appendectomy" },
+                { image: "/images/services/breast_cancer.png", title: "Breast Cancer Care" },
+                { image: "/images/services/hemorrhoids.png", title: "PPH Stapled Hemorrhoid Surgery" },
+                { image: "/images/services/laser_surgery.png", title: "Laser & LigaSure Procedures" },
+                { image: "/images/services/thyroid.png", title: "Thyroid & Goiter Surgery" },
+                { image: "/images/services/intestines.png", title: "Small & Large Intestine Disorders" },
+                { image: "/images/services/rectal_bleeding.png", title: "Rectal Bleeding Treatment" },
+                { image: "/images/services/abscess.png", title: "Pus & Abscess Management" },
+                { image: "/images/services/intestinal_cancer.png", title: "Intestinal Cancers" },
+                { image: "/images/services/uterine_cancer.png", title: "Uterine Cancer & Gynecological Diseases" },
+                { image: "/images/services/ovarian_tumor.png", title: "Ovarian Tumors & Cysts" },
+                { image: "/images/services/lap_ovarian_cyst.png", title: "Laparoscopic Ovarian Cyst Removal" },
+                { image: "/images/services/kidney_stones.png", title: "Kidney & Ureteral Stones" },
+                { image: "/images/services/bladder_stones.png", title: "Bladder Stones" },
+                { image: "/images/services/abdominal_tumor.png", title: "Abdominal Tumors / Masses" },
               ].map((service, i) => {
                 const Icon = service.icon;
                 return (
                 <StaggerItem key={i} className="h-full">
-                  <div className="bg-white rounded-3xl p-8 h-full shadow-lg border border-slate-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col group">
-                    <div className="p-3 bg-slate-50 rounded-xl w-fit mb-6 group-hover:bg-primary/10 transition-colors">
-                      <Icon className="h-8 w-8 text-secondary group-hover:text-primary transition-colors" />
-                    </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
-                    <p className="text-slate-600 leading-relaxed flex-grow">{service.desc}</p>
+                  <div className="bg-white rounded-2xl p-6 h-full shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    {service.image ? (
+                      <div className="relative w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm border border-slate-100 group-hover:shadow-md transition-shadow">
+                        <Image src={service.image} alt={service.title} fill className="object-cover" />
+                      </div>
+                    ) : Icon ? (
+                      <div className="relative w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm border border-slate-100 group-hover:shadow-md transition-shadow bg-slate-50 flex items-center justify-center p-2">
+                        <Icon className="w-full h-full" />
+                      </div>
+                    ) : null}
+                    <h3 className="text-sm font-bold text-slate-800 leading-tight group-hover:text-primary transition-colors">{service.title}</h3>
                   </div>
                 </StaggerItem>
               )})}
@@ -137,27 +162,43 @@ export default function ServicesPage() {
               </FadeIn>
             </div>
             
-            <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               {[
-                { icon: MaternityIcon, title: "Antenatal, Prenatal & Postnatal Care", desc: "Comprehensive monitoring and care throughout your entire pregnancy journey and beyond." },
-                { icon: HighRiskPregnancyIcon, title: "High-Risk Pregnancy", desc: "Expert management for pregnancies requiring specialized medical attention." },
-                { icon: MaternityIcon, title: "Normal & Cesarean Deliveries", desc: "Safe delivery options in our fully equipped, hygienic maternity ward." },
-                { icon: GynecologyIcon, title: "PCOS Management", desc: "Diagnosis, treatment plans, and lifestyle counseling for Polycystic Ovary Syndrome." },
-                { icon: GynecologyIcon, title: "Infertility Consultations", desc: "Initial assessments and guidance for couples struggling with conception." },
-                { icon: GynecologyIcon, title: "General Gynecology", desc: "Treatment for menstrual disorders, infections, and routine women's health checkups." }
-              ].map((service, i) => {
-                const Icon = service.icon;
-                return (
+                { image: "/images/services/mat_pregnancy.png", title: "Antenatal, Prenatal & Postnatal Care" },
+                { image: "/images/services/mat_high_risk.png", title: "High-Risk Pregnancy" },
+                { image: "/images/services/mat_delivery.png", title: "Normal & Cesarean Deliveries" },
+                { image: "/images/services/mat_ovary.png", title: "PCOS Management" },
+                { image: "/images/services/mat_fertility.png", title: "Infertility Consultations" },
+                { image: "/images/services/mat_uterus.png", title: "General Gynecology" },
+                { image: "/images/services/mat_miscarriage.png", title: "Recurrent Pregnancy Loss / Miscarriage Management" },
+                { image: "/images/services/mat_diabetes.png", title: "Gestational Diabetes Care" },
+                { image: "/images/services/mat_blood.png", title: "Gestational Anemia Treatment" },
+                { image: "/images/services/mat_placenta_previa.png", title: "Placenta Previa Management" },
+                { image: "/images/services/mat_molar_pregnancy.png", title: "Molar Pregnancy Care" },
+                { image: "/images/services/mat_uterine_prolapse.png", title: "Uterine Prolapse Treatment" },
+                { image: "/images/services/mat_infertility_treatment.png", title: "Infertility Diagnosis & Treatment" },
+                { image: "/images/services/mat_menstruation.png", title: "Menstrual Disorders & Irregularities" },
+                { image: "/images/services/mat_placental_abruption.png", title: "Placental Abruption Management" },
+                { image: "/images/services/mat_family_planning.png", title: "Family Planning Services" },
+                { image: "/images/services/mat_preeclampsia.png", title: "Gestational Hypertension & Preeclampsia Care" },
+                { image: "/images/services/mat_ectopic.png", title: "Ectopic / Tubal Pregnancy Management" },
+                { image: "/images/services/mat_anomalies.png", title: "Fetal Congenital Anomalies Care" },
+                { image: "/images/services/mat_cancers.png", title: "Uterine & Ovarian Cysts, Tumors, and Cancers" },
+                { image: "/images/services/mat_hysterectomy.png", title: "Hysterectomy (Surgical Removal of Uterus)" },
+                { image: "/images/services/mat_dye_test.png", title: "Laparoscopic Dye Test (Tubal Assessment)" },
+                { image: "/images/services/mat_pelvic_prolapse.png", title: "Pelvic Organ Prolapse Surgery (Bladder & Uterus)" },
+                { image: "/images/services/mat_lap_ectopic.png", title: "Laparoscopic Ectopic Pregnancy Surgery" },
+                { image: "/images/services/mat_gyn_oncology.png", title: "Gynecologic Oncology & Advanced Laparoscopic Surgery" }
+              ].map((service, i) => (
                 <StaggerItem key={i} className="h-full">
-                  <div className="bg-white rounded-3xl p-8 h-full shadow-lg border border-slate-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col group">
-                    <div className="p-3 bg-pink-50 rounded-xl w-fit mb-6 group-hover:bg-pink-100 transition-colors">
-                      <Icon className="h-8 w-8 text-pink-500 group-hover:text-pink-600 transition-colors" />
+                  <div className="bg-white rounded-2xl p-6 h-full shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl hover:border-pink-500/30 transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div className="relative w-20 h-20 mb-4 rounded-full overflow-hidden shadow-sm border border-pink-50 group-hover:shadow-md transition-shadow">
+                      <Image src={service.image} alt={service.title} fill className="object-cover" />
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">{service.title}</h3>
-                    <p className="text-slate-600 leading-relaxed flex-grow">{service.desc}</p>
+                    <h3 className="text-sm font-bold text-slate-800 leading-tight group-hover:text-pink-600 transition-colors">{service.title}</h3>
                   </div>
                 </StaggerItem>
-              )})}
+              ))}
             </StaggerContainer>
           </div>
 

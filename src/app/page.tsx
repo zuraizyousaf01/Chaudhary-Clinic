@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <div className="flex flex-col pb-0 sm:pb-20">
       {/* Hero Section */}
-      <section className="relative -mt-20 pt-20 min-h-screen flex flex-col items-center justify-center text-white overflow-hidden z-0">
-        <div className="absolute inset-0 bg-[url('/images/doctors/opd.webp')] bg-cover bg-center bg-fixed z-0" />
+      <section className="relative -mt-20 pt-20 min-h-screen flex flex-col items-center justify-center text-white z-0 [clip-path:inset(0)]">
+        <div className="fixed top-0 left-0 w-full h-screen bg-[url('/images/doctors/opd.webp')] bg-cover bg-center z-[-1]" />
         <div className="absolute inset-0 bg-black/50 z-0" />
         <StaggerContainer className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
           <StaggerItem>
