@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4 text-white">
               <div className="relative h-24 w-64 flex-shrink-0">
-                <Image src="/images/logo.png" alt="Choudhury Clinic Logo" fill className="object-contain" />
+                <Image src="/images/logo.webp" alt="Choudhury Clinic Logo" fill className="object-contain" />
               </div>
             </div>
             <p className="text-sm text-slate-400 mb-6">

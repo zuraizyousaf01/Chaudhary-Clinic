@@ -12,6 +12,12 @@ import Image from "next/image";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { StaggerContainer, StaggerItem } from "@/components/ui/animations/StaggerContainer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Medical Services & Treatments",
+  description: "Comprehensive medical services including laparoscopic surgery, maternity care, gallbladder removal, hernia repair, and general gynecology at Choudhury Clinic.",
+};
 
 export default function ServicesPage() {
   const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20a%20surgical%20consultation";
@@ -70,7 +76,7 @@ export default function ServicesPage() {
               <FadeIn className="lg:col-span-7 order-1 lg:order-2">
                 <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl">
                   <Image 
-                    src="/images/surgery-banner.png" 
+                    src="/images/surgery-banner.webp" 
                     alt="Modern Operating Room" 
                     fill 
                     className="object-cover"
@@ -82,24 +88,24 @@ export default function ServicesPage() {
             
             <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               {[
-                { image: "/images/services/gallstone.png", title: "Gallstones Treatment" },
-                { image: "/images/services/bile_duct.png", title: "Laparoscopic & Choledochoscopic Bile Duct Surgery" },
-                { image: "/images/services/hernia.png", title: "Hernia Repair" },
-                { image: "/images/services/appendectomy.png", title: "Appendectomy" },
-                { image: "/images/services/breast_cancer.png", title: "Breast Cancer Care" },
-                { image: "/images/services/hemorrhoids.png", title: "PPH Stapled Hemorrhoid Surgery" },
-                { image: "/images/services/laser_surgery.png", title: "Laser & LigaSure Procedures" },
-                { image: "/images/services/thyroid.png", title: "Thyroid & Goiter Surgery" },
-                { image: "/images/services/intestines.png", title: "Small & Large Intestine Disorders" },
-                { image: "/images/services/rectal_bleeding.png", title: "Rectal Bleeding Treatment" },
-                { image: "/images/services/abscess.png", title: "Pus & Abscess Management" },
-                { image: "/images/services/intestinal_cancer.png", title: "Intestinal Cancers" },
-                { image: "/images/services/uterine_cancer.png", title: "Uterine Cancer & Gynecological Diseases" },
-                { image: "/images/services/ovarian_tumor.png", title: "Ovarian Tumors & Cysts" },
-                { image: "/images/services/lap_ovarian_cyst.png", title: "Laparoscopic Ovarian Cyst Removal" },
-                { image: "/images/services/kidney_stones.png", title: "Kidney & Ureteral Stones" },
-                { image: "/images/services/bladder_stones.png", title: "Bladder Stones" },
-                { image: "/images/services/abdominal_tumor.png", title: "Abdominal Tumors / Masses" },
+                { image: "/images/services/gallstone.webp", title: "Gallstones Treatment" },
+                { image: "/images/services/bile_duct.webp", title: "Laparoscopic & Choledochoscopic Bile Duct Surgery" },
+                { image: "/images/services/hernia.webp", title: "Hernia Repair" },
+                { image: "/images/services/appendectomy.webp", title: "Appendectomy" },
+                { image: "/images/services/breast_cancer.webp", title: "Breast Cancer Care" },
+                { image: "/images/services/hemorrhoids.webp", title: "PPH Stapled Hemorrhoid Surgery" },
+                { image: "/images/services/laser_surgery.webp", title: "Laser & LigaSure Procedures" },
+                { image: "/images/services/thyroid.webp", title: "Thyroid & Goiter Surgery" },
+                { image: "/images/services/intestines.webp", title: "Small & Large Intestine Disorders" },
+                { image: "/images/services/rectal_bleeding.webp", title: "Rectal Bleeding Treatment" },
+                { image: "/images/services/abscess.webp", title: "Pus & Abscess Management" },
+                { image: "/images/services/intestinal_cancer.webp", title: "Intestinal Cancers" },
+                { image: "/images/services/uterine_cancer.webp", title: "Uterine Cancer & Gynecological Diseases" },
+                { image: "/images/services/ovarian_tumor.webp", title: "Ovarian Tumors & Cysts" },
+                { image: "/images/services/lap_ovarian_cyst.webp", title: "Laparoscopic Ovarian Cyst Removal" },
+                { image: "/images/services/kidney_stones.webp", title: "Kidney & Ureteral Stones" },
+                { image: "/images/services/bladder_stones.webp", title: "Bladder Stones" },
+                { image: "/images/services/abdominal_tumor.webp", title: "Abdominal Tumors / Masses" },
               ].map((service, i) => (
                 <StaggerItem key={i} className="h-full">
                   <div className="bg-white rounded-2xl p-6 h-full shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center group cursor-default">
@@ -122,7 +128,7 @@ export default function ServicesPage() {
               <FadeIn className="lg:col-span-7">
                 <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl">
                   <Image 
-                    src="/images/maternity-banner.png" 
+                    src="/images/maternity-banner.webp" 
                     alt="Maternity Ward" 
                     fill 
                     className="object-cover"
@@ -156,31 +162,31 @@ export default function ServicesPage() {
             
             <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
               {[
-                { image: "/images/services/mat_pregnancy.png", title: "Antenatal, Prenatal & Postnatal Care" },
-                { image: "/images/services/mat_high_risk.png", title: "High-Risk Pregnancy" },
-                { image: "/images/services/mat_delivery.png", title: "Normal & Cesarean Deliveries" },
-                { image: "/images/services/mat_ovary.png", title: "PCOS Management" },
-                { image: "/images/services/mat_fertility.png", title: "Infertility Consultations" },
-                { image: "/images/services/mat_uterus.png", title: "General Gynecology" },
-                { image: "/images/services/mat_miscarriage.png", title: "Recurrent Pregnancy Loss / Miscarriage Management" },
-                { image: "/images/services/mat_diabetes.png", title: "Gestational Diabetes Care" },
-                { image: "/images/services/mat_blood.png", title: "Gestational Anemia Treatment" },
-                { image: "/images/services/mat_placenta_previa.png", title: "Placenta Previa Management" },
-                { image: "/images/services/mat_molar_pregnancy.png", title: "Molar Pregnancy Care" },
-                { image: "/images/services/mat_uterine_prolapse.png", title: "Uterine Prolapse Treatment" },
-                { image: "/images/services/mat_infertility_treatment.png", title: "Infertility Diagnosis & Treatment" },
-                { image: "/images/services/mat_menstruation.png", title: "Menstrual Disorders & Irregularities" },
-                { image: "/images/services/mat_placental_abruption.png", title: "Placental Abruption Management" },
-                { image: "/images/services/mat_family_planning.png", title: "Family Planning Services" },
-                { image: "/images/services/mat_preeclampsia.png", title: "Gestational Hypertension & Preeclampsia Care" },
-                { image: "/images/services/mat_ectopic.png", title: "Ectopic / Tubal Pregnancy Management" },
-                { image: "/images/services/mat_anomalies.png", title: "Fetal Congenital Anomalies Care" },
-                { image: "/images/services/mat_cancers.png", title: "Uterine & Ovarian Cysts, Tumors, and Cancers" },
-                { image: "/images/services/mat_hysterectomy.png", title: "Hysterectomy (Surgical Removal of Uterus)" },
-                { image: "/images/services/mat_dye_test.png", title: "Laparoscopic Dye Test (Tubal Assessment)" },
-                { image: "/images/services/mat_pelvic_prolapse.png", title: "Pelvic Organ Prolapse Surgery (Bladder & Uterus)" },
-                { image: "/images/services/mat_lap_ectopic.png", title: "Laparoscopic Ectopic Pregnancy Surgery" },
-                { image: "/images/services/mat_gyn_oncology.png", title: "Gynecologic Oncology & Advanced Laparoscopic Surgery" }
+                { image: "/images/services/mat_pregnancy.webp", title: "Antenatal, Prenatal & Postnatal Care" },
+                { image: "/images/services/mat_high_risk.webp", title: "High-Risk Pregnancy" },
+                { image: "/images/services/mat_delivery.webp", title: "Normal & Cesarean Deliveries" },
+                { image: "/images/services/mat_ovary.webp", title: "PCOS Management" },
+                { image: "/images/services/mat_fertility.webp", title: "Infertility Consultations" },
+                { image: "/images/services/mat_uterus.webp", title: "General Gynecology" },
+                { image: "/images/services/mat_miscarriage.webp", title: "Recurrent Pregnancy Loss / Miscarriage Management" },
+                { image: "/images/services/mat_diabetes.webp", title: "Gestational Diabetes Care" },
+                { image: "/images/services/mat_blood.webp", title: "Gestational Anemia Treatment" },
+                { image: "/images/services/mat_placenta_previa.webp", title: "Placenta Previa Management" },
+                { image: "/images/services/mat_molar_pregnancy.webp", title: "Molar Pregnancy Care" },
+                { image: "/images/services/mat_uterine_prolapse.webp", title: "Uterine Prolapse Treatment" },
+                { image: "/images/services/mat_infertility_treatment.webp", title: "Infertility Diagnosis & Treatment" },
+                { image: "/images/services/mat_menstruation.webp", title: "Menstrual Disorders & Irregularities" },
+                { image: "/images/services/mat_placental_abruption.webp", title: "Placental Abruption Management" },
+                { image: "/images/services/mat_family_planning.webp", title: "Family Planning Services" },
+                { image: "/images/services/mat_preeclampsia.webp", title: "Gestational Hypertension & Preeclampsia Care" },
+                { image: "/images/services/mat_ectopic.webp", title: "Ectopic / Tubal Pregnancy Management" },
+                { image: "/images/services/mat_anomalies.webp", title: "Fetal Congenital Anomalies Care" },
+                { image: "/images/services/mat_cancers.webp", title: "Uterine & Ovarian Cysts, Tumors, and Cancers" },
+                { image: "/images/services/mat_hysterectomy.webp", title: "Hysterectomy (Surgical Removal of Uterus)" },
+                { image: "/images/services/mat_dye_test.webp", title: "Laparoscopic Dye Test (Tubal Assessment)" },
+                { image: "/images/services/mat_pelvic_prolapse.webp", title: "Pelvic Organ Prolapse Surgery (Bladder & Uterus)" },
+                { image: "/images/services/mat_lap_ectopic.webp", title: "Laparoscopic Ectopic Pregnancy Surgery" },
+                { image: "/images/services/mat_gyn_oncology.webp", title: "Gynecologic Oncology & Advanced Laparoscopic Surgery" }
               ].map((service, i) => (
                 <StaggerItem key={i} className="h-full">
                   <div className="bg-white rounded-2xl p-6 h-full shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl hover:border-pink-500/30 transition-all duration-300 flex flex-col items-center text-center group cursor-default">

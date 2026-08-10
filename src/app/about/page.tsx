@@ -3,6 +3,12 @@ import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { StaggerContainer, StaggerItem } from "@/components/ui/animations/StaggerContainer";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Learn about Choudhury Clinic's mission to provide advanced laparoscopic and gynecological care with a patient-centered approach.",
+};
 
 export default function AboutPage() {
   return (
@@ -34,7 +40,7 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-80 md:h-full min-h-[300px]">
                   <Image 
-                    src="/images/doctors/Doctors_vision.jpeg"
+                    src="/images/doctors/Doctors_vision.webp"
                     alt="Doctors Vision"
                     fill
                     className="object-cover object-[center_20%]"

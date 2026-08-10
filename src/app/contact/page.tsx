@@ -1,5 +1,11 @@
 import { Phone, MessageCircle, MapPin, Clock, ArrowRight } from "lucide-react";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact & Location",
+  description: "Get in touch with Choudhury Clinic in Multan. Find our location, booking details, and consultation timings.",
+};
 
 export default function ContactPage() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";

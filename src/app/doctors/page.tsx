@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { ArrowRight, Award, GraduationCap, Stethoscope, CheckCircle2, Clock, Activity, HeartPulse } from "lucide-react";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Specialists",
+  description: "Meet Dr. Waseem Abbas Chaudhary and Dr. Sehar Waseem Abbas Chaudhary, our expert surgeons in laparoscopy and gynecology.",
+};
 
 export default function DoctorsPage() {
   const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";

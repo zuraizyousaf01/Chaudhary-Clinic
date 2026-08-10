@@ -48,7 +48,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-16 w-40 sm:h-20 sm:w-48 flex-shrink-0 scale-100 origin-left sm:scale-125 md:scale-150">
-            <Image src="/images/logo.png" alt="Choudhury Clinic Logo" fill className="object-contain drop-shadow-sm" />
+            <Image src="/images/logo.webp" alt="Choudhury Clinic Logo" fill className="object-contain drop-shadow-sm" />
           </div>
         </Link>
 

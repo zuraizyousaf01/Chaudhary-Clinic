@@ -45,7 +45,7 @@ export function FAQSection() {
             
             <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full shadow-lg overflow-hidden">
               <Image
-                src="/images/FAQ_Doctor.jpeg"
+                src="/images/FAQ_Doctor.webp"
                 alt="Doctor answering questions"
                 fill
                 className="object-cover scale-[1.2] origin-[20%_center]"
