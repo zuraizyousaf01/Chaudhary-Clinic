@@ -12,8 +12,8 @@ import { FAQSection } from "@/components/ui/FAQSection";
 
 export default function Home() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
-  const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
-  const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
+  const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20a%20consultation%20with%20Dr.%20Waseem%20Abbas";
+  const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20a%20consultation%20with%20Dr.%20Sehar%20Waseem";
 
   return (
     <div className="flex flex-col pb-0 sm:pb-20">
@@ -245,14 +245,15 @@ export default function Home() {
       </div>
 
       {/* Services Enhanced Section */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative">
-        {/* Subtle background blob */}
-        <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 -z-10 pointer-events-none" />
-        
+      <section className="py-12 lg:py-16 relative w-full overflow-hidden">
         {/* Soft gradient transition into the FAQ section below */}
         <div className="absolute bottom-0 left-0 w-full h-12 sm:h-16 bg-gradient-to-t from-[#F5EFE6] to-transparent pointer-events-none z-0" />
         
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+          {/* Subtle background blob */}
+          <div className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 -z-10 pointer-events-none" />
+          
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start relative z-10">
           {/* Left Column: Title & Text */}
           <div className="lg:col-span-4 lg:sticky lg:top-24">
             <FadeIn>
@@ -367,6 +368,7 @@ export default function Home() {
               })}
             </StaggerContainer>
           </div>
+        </div>
         </div>
       </section>
 

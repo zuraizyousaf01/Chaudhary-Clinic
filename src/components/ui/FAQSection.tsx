@@ -35,14 +35,14 @@ export function FAQSection() {
   return (
     <section className="py-6 lg:py-10 relative overflow-hidden bg-[#F5EFE6]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1400px]">
-        
+
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-start">
-          
+
           {/* Image Side */}
           <SlideUp className="w-full lg:w-1/2 order-1 relative z-10">
             {/* Decorative Offset Frame */}
             <div className="absolute top-4 -left-4 lg:top-8 lg:-left-8 w-full h-full border-4 border-[#8B2E5F]/20 -z-10 hidden sm:block" />
-            
+
             <div className="relative h-[300px] sm:h-[400px] lg:h-[500px] w-full shadow-lg overflow-hidden">
               <Image
                 src="/images/FAQ_Doctor.webp"
@@ -72,9 +72,9 @@ export function FAQSection() {
             <div className="w-full border-t border-[#8B2E5F]/30">
               {faqs.map((faq, index) => {
                 const isOpen = openIndex === index;
-                
+
                 return (
-                  <div 
+                  <div
                     key={index}
                     className="border-b border-[#8B2E5F]/30"
                   >
@@ -83,15 +83,15 @@ export function FAQSection() {
                       className="w-full text-left py-3 flex items-start sm:items-center gap-4 focus:outline-none group"
                     >
                       <div className={`shrink-0 flex items-center justify-center transition-transform duration-300 mt-1 sm:mt-0 ${isOpen ? 'rotate-90' : ''}`}>
-                         <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 6L0.25 11.6292L0.25 0.370835L10 6Z" fill="#8B2E5F"/>
-                         </svg>
+                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 6L0.25 11.6292L0.25 0.370835L10 6Z" fill="#8B2E5F" />
+                        </svg>
                       </div>
                       <span className="text-base sm:text-lg font-serif transition-colors text-[#8B2E5F]">
                         {faq.question}
                       </span>
                     </button>
-                    
+
                     <AnimatePresence>
                       {isOpen && (
                         <motion.div

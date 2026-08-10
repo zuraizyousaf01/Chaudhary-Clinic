@@ -113,7 +113,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <Link
-                  href="/"
+                  href="/doctors"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-white shadow-lg hover:bg-primary-hover transition-colors"
                 >
                   View Full Profiles

@@ -20,8 +20,8 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
-  const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20a%20surgical%20consultation";
-  const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20a%20gynecology%20consultation";
+  const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20a%20surgical%20consultation%20with%20Dr.%20Waseem%20Abbas";
+  const gynWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20a%20gynecology%20consultation%20with%20Dr.%20Sehar%20Waseem";
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
