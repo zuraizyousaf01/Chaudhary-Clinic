@@ -1,4 +1,4 @@
-import { CheckCircle2, ShieldPlus, Clock, Heart, Award, Users, Stethoscope, ArrowRight } from "lucide-react";
+import { CheckCircle2, ShieldPlus, Clock, Heart, Award, Users, Stethoscope, ArrowRight, ShieldCheck } from "lucide-react";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { StaggerContainer, StaggerItem } from "@/components/ui/animations/StaggerContainer";
 import Image from "next/image";
@@ -183,6 +183,42 @@ export default function AboutPage() {
             </SlideUp>
           </div>
 
+        </div>
+      </section>
+
+      {/* Insurance and Panels */}
+      <section className="py-20 bg-slate-50 relative z-10 border-t border-slate-200">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <SlideUp className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Accepted Insurance & Corporate Panels</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-lg">We are on the panel of leading health insurance providers and corporate organizations to make your healthcare journey seamless.</p>
+          </SlideUp>
+          <StaggerContainer className="flex flex-wrap justify-center gap-4 md:gap-6">
+            {[
+              "Askari Insurance",
+              "EFU Health Insurance",
+              "NBP (National Bank of Pakistan)",
+              "Jubilee General Insurance",
+              "Alfalah Insurance",
+              "PTCL",
+              "Health eConnex",
+              "UIC Pakistan",
+              "IGI Insurance",
+              "State Life Insurance",
+              "Adamjee Insurance",
+              "Salaam Takaful",
+              "Century Insurance"
+            ].map((panel, i) => (
+              <StaggerItem key={i}>
+                <div className="group flex items-center gap-3 bg-white border border-slate-200 px-5 py-3 rounded-2xl hover:border-secondary/40 hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+                  <div className="bg-secondary/10 p-2 rounded-lg group-hover:bg-secondary/20 transition-colors">
+                    <ShieldCheck className="h-5 w-5 text-secondary" />
+                  </div>
+                  <span className="font-semibold text-slate-700">{panel}</span>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
         </div>
       </section>
     </div>

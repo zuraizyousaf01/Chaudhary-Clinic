@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Calendar, ArrowRight, Star, MapPin, Award, GraduationCap, Stethoscope, CheckCircle2, Clock, Activity, HeartPulse } from "lucide-react";
+import { Phone, Calendar, ArrowRight, Star, MapPin, Award, GraduationCap, Stethoscope, CheckCircle2, Clock, Activity, HeartPulse, Building2 } from "lucide-react";
 import reviews from "../../public/data/reviews.json";
 import { ReviewCarousel } from "@/components/ui/ReviewCarousel";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
@@ -372,6 +372,39 @@ export default function Home() {
         </div>
       </section>
 
+
+
+      {/* Affiliated Hospitals */}
+      <section className="py-12 bg-white relative z-10 border-t border-slate-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <SlideUp className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 mb-4">
+              <span className="text-xs font-bold text-slate-600 uppercase tracking-wider">Trusted Partnerships</span>
+            </div>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">Our Doctors Are Affiliated With</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">Providing advanced care and surgical expertise across Multan's premier healthcare institutions.</p>
+          </SlideUp>
+          <StaggerContainer className="flex flex-wrap justify-center gap-4 md:gap-6">
+            {[
+              "Nishtar Hospital Multan",
+              "Rehman Surgicare Hospital",
+              "Multan General Hospital",
+              "Haleema Hospital Complex",
+              "South Punjab Hospital",
+              "Razia Saeed Hospital"
+            ].map((hospital, i) => (
+              <StaggerItem key={i}>
+                <div className="group flex items-center gap-4 bg-[#FAF8F5] border border-slate-200 px-6 py-4 rounded-2xl hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1">
+                  <div className="bg-white p-2.5 rounded-xl shadow-sm border border-slate-100 group-hover:bg-primary/5 transition-colors">
+                    <Building2 className="h-6 w-6 text-primary" />
+                  </div>
+                  <span className="font-bold text-slate-800 text-lg">{hospital}</span>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+        </div>
+      </section>
 
 
       {/* FAQ Section */}
