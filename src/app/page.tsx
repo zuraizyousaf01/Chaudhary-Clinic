@@ -61,8 +61,7 @@ export default function Home() {
       <section className="py-10 lg:py-16 relative overflow-hidden bg-white z-0">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50/50 rounded-l-[100px] -z-10 hidden lg:block" />
         
-        {/* Soft gradient transition into Dr. Sehar's section below */}
-        <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-[#FAF8F5] to-transparent pointer-events-none z-0" />
+        {/* Soft transition into Dr. Sehar's section below */}
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -151,8 +150,7 @@ export default function Home() {
 
         {/* Dr. Sehar Section */}
       <section className="py-10 lg:py-16 relative overflow-hidden bg-[#FAF8F5] z-0">
-        {/* Soft gradient transition into Services section below */}
-        <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none z-0" />
+        {/* Soft transition into Services section below */}
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -246,8 +244,7 @@ export default function Home() {
 
       {/* Services Enhanced Section */}
       <section className="py-12 lg:py-16 relative w-full overflow-hidden">
-        {/* Soft gradient transition into the FAQ section below */}
-        <div className="absolute bottom-0 left-0 w-full h-12 sm:h-16 bg-gradient-to-t from-[#F5EFE6] to-transparent pointer-events-none z-0" />
+        {/* Soft transition into the FAQ section below */}
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Subtle background blob */}
@@ -413,11 +410,8 @@ export default function Home() {
       {/* Google Reviews */}
 
       <section className="bg-[#FAF8F5] py-20 relative overflow-hidden z-0">
-        {/* Soft gradient transition from the FAQ section above */}
-        <div className="absolute top-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-b from-[#F5EFE6] to-transparent pointer-events-none z-0" />
-        
-        {/* Soft gradient transition into the YouTube section below */}
-        <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none z-0" />
+        {/* Soft transition from the FAQ section above */}
+        {/* Soft transition into the YouTube section below */}
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <SlideUp className="text-center mb-12">
