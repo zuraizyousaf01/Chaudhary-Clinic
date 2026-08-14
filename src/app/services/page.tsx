@@ -16,7 +16,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Medical Services & Treatments",
-  description: "Comprehensive medical services including laparoscopic surgery, maternity care, gallbladder removal, hernia repair, and general gynecology at Choudhury Clinic.",
+  description: "Comprehensive medical services including laparoscopic surgery, maternity care, gallbladder removal, hernia repair, and general gynecology at Choudhary Clinic.",
 };
 
 export default function ServicesPage() {

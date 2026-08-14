@@ -11,33 +11,34 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://choudharyclinic.com"),
   title: {
-    template: "%s | Choudhury Clinic",
-    default: "Choudhury Clinic - Advanced Laparoscopic & Gynecological Care in Multan",
+    template: "%s | Choudhary Clinic",
+    default: "Choudhary Clinic - Advanced Laparoscopic & Gynecological Care in Multan",
   },
   description: "Advanced Laparoscopic & Gynecological Care by Dr. Waseem Abbas Chaudhary and Dr. Sehar Waseem. Specializing in minimally invasive surgery, maternity care, and general gynecology in Multan.",
   keywords: ["Laparoscopic Surgery", "Gynecologist", "Maternity Clinic Multan", "Gallbladder Removal", "Hernia Repair", "Dr. Waseem Abbas", "Dr. Sehar Waseem"],
-  authors: [{ name: "Choudhury Clinic" }],
-  creator: "Choudhury Clinic",
+  authors: [{ name: "Choudhary Clinic" }],
+  creator: "Choudhary Clinic",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://choudhuryclinic.com",
-    siteName: "Choudhury Clinic",
-    title: "Choudhury Clinic - Advanced Laparoscopic & Gynecological Care",
+    url: "https://choudharyclinic.com",
+    siteName: "Choudhary Clinic",
+    title: "Choudhary Clinic - Advanced Laparoscopic & Gynecological Care",
     description: "Advanced Laparoscopic & Gynecological Care in Multan. Providing state-of-the-art surgical facilities and compassionate maternity care.",
     images: [
       {
         url: "/images/doctors/opd.webp",
         width: 1200,
         height: 630,
-        alt: "Choudhury Clinic",
+        alt: "Choudhary Clinic",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Choudhury Clinic - Advanced Laparoscopic & Gynecological Care",
+    title: "Choudhary Clinic - Advanced Laparoscopic & Gynecological Care",
     description: "Advanced Laparoscopic & Gynecological Care in Multan. Providing state-of-the-art surgical facilities and compassionate maternity care.",
     images: ["/images/doctors/opd.webp"],
   },
@@ -64,7 +65,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "MedicalClinic",
-              "name": "Choudhury Clinic",
+              "name": "Choudhary Clinic",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Ground Floor, Khan Medical City, Hall # 1, Nishtar Rd, Al Rahim Colony",
@@ -73,7 +74,7 @@ export default function RootLayout({
                 "addressCountry": "PK"
               },
               "telephone": "+923368775530",
-              "url": "https://choudhuryclinic.com",
+              "url": "https://choudharyclinic.com",
               "medicalSpecialty": [
                 "Laparoscopic Surgery",
                 "Gynecology",

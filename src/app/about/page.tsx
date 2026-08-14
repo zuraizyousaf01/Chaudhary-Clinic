@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Choudhury Clinic's mission to provide advanced laparoscopic and gynecological care with a patient-centered approach.",
+  description: "Learn about Choudhary Clinic's mission to provide advanced laparoscopic and gynecological care with a patient-centered approach.",
 };
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <SlideUp>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6">
-              About <span className="text-secondary">Choudhury Clinic</span>
+              About <span className="text-secondary">Choudhary Clinic</span>
             </h1>
             <p className="text-lg md:text-xl text-teal-50 max-w-2xl mx-auto leading-relaxed">
               Dedicated to providing advanced surgical and maternal care with a commitment to patient safety, hygiene, and compassion.
@@ -53,7 +53,7 @@ export default function AboutPage() {
                   </div>
                   <h2 className="text-3xl font-bold text-slate-900 mb-6">Setting the Standard in Healthcare</h2>
                   <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                    Choudhury Clinic was established with a singular vision: to make advanced medical care accessible, safe, and comfortable. We specialize in two primary domains: minimally invasive Laparoscopic Surgery and comprehensive Gynecology & Obstetrics. 
+                    Choudhary Clinic was established with a singular vision: to make advanced medical care accessible, safe, and comfortable. We specialize in two primary domains: minimally invasive Laparoscopic Surgery and comprehensive Gynecology & Obstetrics. 
                   </p>
                   <p className="text-slate-600 text-lg leading-relaxed">
                     By focusing on these core specialties, we ensure that our patients receive expert attention from highly qualified specialists using the latest medical technology. Our patient-first approach means less recovery time, better outcomes, and a supportive environment throughout your healthcare journey.
