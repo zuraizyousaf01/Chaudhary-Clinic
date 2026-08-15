@@ -9,6 +9,7 @@ import { StaggerContainer, StaggerItem } from "@/components/ui/animations/Stagge
 import { YouTubeVideos } from "@/components/ui/YouTubeVideos";
 import { LaparoscopyIcon, GallbladderIcon, HerniaIcon, MaternityIcon, HighRiskPregnancyIcon, GynecologyIcon } from "@/components/ui/icons/MedicalIcons";
 import { FAQSection } from "@/components/ui/FAQSection";
+import CarouselGallery from "@/components/ui/CarouselGallery";
 
 export default function Home() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
@@ -53,6 +54,7 @@ export default function Home() {
           </StaggerItem>
         </StaggerContainer>
       </section>
+
 
       {/* Dual Specialists Section */}
       <div className="relative z-10 overflow-hidden">
@@ -389,12 +391,12 @@ export default function Home() {
               "South Punjab Hospital",
               "Razia Saeed Hospital"
             ].map((hospital, i) => (
-              <StaggerItem key={i}>
-                <div className="group flex items-center gap-4 bg-[#FAF8F5] border border-slate-200 px-6 py-4 rounded-2xl hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1">
-                  <div className="bg-white p-2.5 rounded-xl shadow-sm border border-slate-100 group-hover:bg-primary/5 transition-colors">
-                    <Building2 className="h-6 w-6 text-primary" />
+              <StaggerItem key={i} className="flex h-full">
+                <div className="group flex flex-row items-center gap-2 sm:gap-4 bg-[#FAF8F5] border border-slate-200 p-2 sm:px-6 sm:py-4 rounded-xl sm:rounded-2xl hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 w-full h-full text-left">
+                  <div className="bg-white p-1.5 sm:p-2.5 rounded-lg sm:rounded-xl shadow-sm border border-slate-100 group-hover:bg-primary/5 transition-colors shrink-0">
+                    <Building2 className="h-4 w-4 sm:h-6 sm:w-6 text-primary" />
                   </div>
-                  <span className="font-bold text-slate-800 text-lg">{hospital}</span>
+                  <span className="font-bold text-slate-800 text-[11px] sm:text-lg leading-tight">{hospital}</span>
                 </div>
               </StaggerItem>
             ))}
@@ -438,6 +440,9 @@ export default function Home() {
 
       {/* YouTube Updates */}
       <YouTubeVideos />
+
+      {/* Clinic Gallery */}
+      <CarouselGallery />
 
       {/* Location Section */}
       <section className="sm:container sm:mx-auto sm:px-6 lg:px-8">
