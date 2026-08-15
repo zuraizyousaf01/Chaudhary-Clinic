@@ -9,6 +9,7 @@
   --color-theme-dark: var(--theme-dark);
   
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 :root {

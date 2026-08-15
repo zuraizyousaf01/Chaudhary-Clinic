@@ -23,7 +23,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50 z-0" />
         <StaggerContainer className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center mt-32 sm:mt-48">
           <StaggerItem>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-2 sm:mb-6 max-w-4xl leading-[1.15] sm:leading-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-200 drop-shadow-sm">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-medium font-serif tracking-tight mb-2 sm:mb-6 max-w-4xl leading-[1.15] sm:leading-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-200 drop-shadow-sm">
               Choudhary <span className="text-secondary drop-shadow-md">Clinic</span>
             </h1>
           </StaggerItem>
