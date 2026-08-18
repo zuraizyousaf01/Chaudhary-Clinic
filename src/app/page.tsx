@@ -10,6 +10,7 @@ import { YouTubeVideos } from "@/components/ui/YouTubeVideos";
 import { LaparoscopyIcon, GallbladderIcon, HerniaIcon, MaternityIcon, HighRiskPregnancyIcon, GynecologyIcon } from "@/components/ui/icons/MedicalIcons";
 import { FAQSection } from "@/components/ui/FAQSection";
 import CarouselGallery from "@/components/ui/CarouselGallery";
+import BreastCancerSection from "@/components/ui/BreastCancerSection";
 
 export default function Home() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
@@ -370,7 +371,8 @@ export default function Home() {
         </div>
       </section>
 
-
+      {/* Breast Cancer Section */}
+      <BreastCancerSection />
 
       {/* Affiliated Hospitals */}
       <section className="py-12 bg-white relative z-10 border-t border-slate-100">
