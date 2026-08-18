@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { CheckCircle2 } from "lucide-react";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
@@ -24,25 +26,29 @@ export const BreastCancerSection = () => {
       {/* Container Constraints: max-width 430px on mobile, max-w-7xl on desktop */}
       <div className="w-full max-w-[430px] lg:max-w-7xl px-[24px] lg:px-8 mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
-          
+
           {/* Order 3 on mobile (bottom), Order 2 on desktop (right) */}
           <div className="w-full lg:w-5/12 order-3 lg:order-2 pt-4 lg:pt-0">
             {/* Patient Testimony (TikTok Video) */}
-            <div className="text-center mb-[48px] lg:mb-0">
+            <div className="mb-[48px] lg:mb-0">
               <SlideUp delay={0.2}>
-                <h3 className="text-[24px] lg:text-[28px] font-bold text-[#111827] mb-2">Hear From Our Patients</h3>
-                <p className="text-[15px] text-slate-600 mb-6 lg:mb-8">Real stories of care and recovery.</p>
+                <div className="flex flex-row items-center justify-between gap-3 lg:flex-col lg:text-center">
+                  <div className="flex-1 text-left lg:text-center pr-1">
+                    <h3 className="text-[20px] sm:text-[24px] lg:text-[28px] font-bold text-[#111827] leading-tight mb-2">Hear From Our Patients</h3>
+                    <p className="text-[14px] sm:text-[15px] text-slate-600 lg:mb-8">Real stories of care and recovery.</p>
+                  </div>
 
-                <div className="mx-auto flex justify-center w-full max-w-[325px] rounded-[16px] overflow-hidden shadow-2xl border-4 border-white bg-black">
-                  <video 
-                    src="/videos/Breast-Cancer.mp4" 
-                    controls 
-                    playsInline
-                    className="w-full h-auto object-cover"
-                    style={{ maxHeight: '580px' }}
-                  >
-                    Your browser does not support the video tag.
-                  </video>
+                  <div className="flex-shrink-0 w-[55%] sm:w-[240px] lg:w-full lg:max-w-[325px] mx-auto flex justify-center rounded-[12px] lg:rounded-[16px] overflow-hidden shadow-xl lg:shadow-2xl border-2 lg:border-4 border-white bg-black">
+                    <video
+                      src="/videos/Breast-Cancer-Cut.mp4"
+                      controls
+                      playsInline
+                      className="w-full h-auto object-contain"
+                      style={{ maxHeight: '580px' }}
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
               </SlideUp>
             </div>
@@ -50,7 +56,7 @@ export const BreastCancerSection = () => {
 
           {/* Order 1 & 2 on mobile (top), Order 1 on desktop (left) */}
           <div className="w-full lg:w-7/12 order-1 lg:order-1 flex flex-col">
-            
+
             {/* Section Intro */}
             <div className="text-center lg:text-left mb-[48px]">
               <FadeIn>

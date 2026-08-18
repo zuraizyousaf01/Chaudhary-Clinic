@@ -60,7 +60,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${prata.variable} font-sans h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-slate-50">
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-slate-50">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
