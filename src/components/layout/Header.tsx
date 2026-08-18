@@ -3,7 +3,7 @@
 import Image from 'next/image';
 
 import Link from 'next/link';
-import { Phone, Calendar, Menu, X, MessageCircle } from 'lucide-react';
+import { Phone, Calendar, Menu, X, MessageCircle, CalendarPlus } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Playfair_Display } from 'next/font/google';
@@ -80,16 +80,27 @@ export default function Header() {
             <span>0300 8775530</span>
           </a>
 
-          <a
-            href="https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 sm:gap-2 rounded-full bg-primary px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all whitespace-nowrap"
-          >
-            <Calendar className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-            <span className="hidden sm:block">Book Appointment</span>
-            <span className="sm:hidden">Book Now</span>
-          </a>
+          <div className="flex items-center gap-2 lg:gap-3">
+            <a
+              href="https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 sm:gap-2 rounded-full bg-primary px-3 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all whitespace-nowrap"
+            >
+              <Calendar className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              <span className="hidden sm:block">Book Appointment</span>
+              <span className="sm:hidden">Book Now</span>
+            </a>
+            <a
+              href="https://oladoc.com/pakistan/multan/dr/general-surgeon/muhammad-waseem-abbas/442134"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-1.5 rounded-full border border-blue-600/50 bg-blue-600/10 px-3 lg:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-blue-100 shadow-sm hover:bg-blue-600/20 hover:text-white hover:border-blue-500 transition-all whitespace-nowrap"
+            >
+              <CalendarPlus className="h-3.5 w-3.5 text-blue-400" />
+              <span>Oladoc</span>
+            </a>
+          </div>
           {/* Mobile Menu Toggle */}
           <button 
             className="md:hidden ml-4 p-2 text-white hover:bg-white/10 rounded-md transition-colors"
@@ -191,7 +202,7 @@ export default function Header() {
                 transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
                 className="w-full h-[1px] bg-[#2a343d] mb-7 origin-left"
               ></motion.div>
-              <div className="flex items-center gap-5 text-white">
+              <div className="flex items-center gap-5 text-white mb-6">
                 <motion.a whileHover={{ scale: 1.2, rotate: 5 }} whileTap={{ scale: 0.9 }} href="https://www.facebook.com/DrWaseemChaudhary1c/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1877F2] transition-colors">
                   <span className="sr-only">Facebook</span>
                   <svg viewBox="0 0 24 24" fill="currentColor" className="h-[20px] w-[20px]"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg>
@@ -204,9 +215,33 @@ export default function Header() {
                   <span className="sr-only">YouTube</span>
                   <svg viewBox="0 0 24 24" fill="currentColor" className="h-[20px] w-[20px]"><path fillRule="evenodd" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" clipRule="evenodd" /></svg>
                 </motion.a>
-                <motion.a whileHover={{ scale: 1.2, rotate: 5 }} whileTap={{ scale: 0.9 }} href="https://www.tiktok.com/@drwaseem334" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors">
-                  <span className="sr-only">TikTok</span>
+                <motion.a whileHover={{ scale: 1.2, rotate: 5 }} whileTap={{ scale: 0.9 }} href="https://www.tiktok.com/@drwaseem334" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition-colors" title="Clinic TikTok">
+                  <span className="sr-only">Clinic TikTok</span>
                   <svg viewBox="0 0 448 512" fill="currentColor" className="h-[18px] w-[18px] mt-0.5"><path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17h0A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"/></svg>
+                </motion.a>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <motion.a 
+                  whileHover={{ scale: 1.02 }} 
+                  whileTap={{ scale: 0.98 }} 
+                  href="https://www.tiktok.com/@userqu8q0yck16?_r=1&_d=ebc3b9l7ddkf5b&sec_uid=MS4wLjABAAAAZOZTTsSVKlJoCiSJpJL4qBb4kwXNoWhIWQeGXXOUWE2k8Sjkz0C9dZtW9d7hA8cV&share_author_id=6674527382227665926&sharer_language=en&source=h5_m&u_code=d5d26haiflba1a&timestamp=1786802535&user_id=6674527382227665926&sec_user_id=MS4wLjABAAAAZOZTTsSVKlJoCiSJpJL4qBb4kwXNoWhIWQeGXXOUWE2k8Sjkz0C9dZtW9d7hA8cV&item_author_type=1&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7637934665185216276&share_link_id=0182600e-417c-439e-a69f-db618e227e40&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center gap-2.5 text-sm font-medium text-[#8B95A1] hover:text-white transition-colors border border-[#2a343d] hover:border-gray-500 rounded-full px-4 py-2.5 w-full sm:w-fit"
+                >
+                  <svg viewBox="0 0 448 512" fill="currentColor" className="h-[16px] w-[16px]"><path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17h0A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"/></svg>
+                  Follow Dr. Waseem
+                </motion.a>
+                <motion.a 
+                  whileHover={{ scale: 1.02 }} 
+                  whileTap={{ scale: 0.98 }} 
+                  href="https://oladoc.com/pakistan/multan/dr/general-surgeon/muhammad-waseem-abbas/442134" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center gap-2.5 text-sm font-medium text-blue-100 hover:text-white transition-colors border border-blue-600/50 bg-blue-600/10 hover:bg-blue-600/20 hover:border-blue-500 rounded-full px-4 py-2.5 w-full sm:w-fit"
+                >
+                  <CalendarPlus className="h-[16px] w-[16px] text-blue-400" strokeWidth={2.5} />
+                  Book via Oladoc
                 </motion.a>
               </div>
             </motion.div>

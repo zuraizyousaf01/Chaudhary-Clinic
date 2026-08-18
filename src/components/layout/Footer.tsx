@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { Phone, MapPin, Clock, MessageCircle, CalendarPlus } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
             <p className="text-sm text-slate-400 mb-6">
               Advanced Laparoscopic & Gynecological Care providing state-of-the-art facilities and compassionate healthcare to our community.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-5">
               <a href="https://www.facebook.com/DrWaseemChaudhary1c/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#1877F2] transition-colors">
                 <span className="sr-only">Facebook</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg>
@@ -31,9 +31,19 @@ export default function Footer() {
                 <span className="sr-only">YouTube</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" clipRule="evenodd" /></svg>
               </a>
-              <a href="https://www.tiktok.com/@drwaseem334" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                <span className="sr-only">TikTok</span>
+              <a href="https://www.tiktok.com/@drwaseem334" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors" title="Clinic TikTok">
+                <span className="sr-only">Clinic TikTok</span>
                 <svg className="h-5 w-5 mt-0.5" fill="currentColor" viewBox="0 0 448 512" aria-hidden="true"><path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17h0A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"/></svg>
+              </a>
+            </div>
+            <div className="flex flex-col gap-3">
+              <a href="https://www.tiktok.com/@userqu8q0yck16?_r=1&_d=ebc3b9l7ddkf5b&sec_uid=MS4wLjABAAAAZOZTTsSVKlJoCiSJpJL4qBb4kwXNoWhIWQeGXXOUWE2k8Sjkz0C9dZtW9d7hA8cV&share_author_id=6674527382227665926&sharer_language=en&source=h5_m&u_code=d5d26haiflba1a&timestamp=1786802535&user_id=6674527382227665926&sec_user_id=MS4wLjABAAAAZOZTTsSVKlJoCiSJpJL4qBb4kwXNoWhIWQeGXXOUWE2k8Sjkz0C9dZtW9d7hA8cV&item_author_type=1&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7637934665185216276&share_link_id=0182600e-417c-439e-a69f-db618e227e40&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs font-medium text-slate-400 hover:text-white transition-colors border border-slate-700/50 hover:border-slate-500 rounded-full px-3 py-1.5 w-fit">
+                <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 448 512" aria-hidden="true"><path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17h0A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"/></svg>
+                Follow Dr. Waseem
+              </a>
+              <a href="https://oladoc.com/pakistan/multan/dr/general-surgeon/muhammad-waseem-abbas/442134" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs font-medium text-blue-100 hover:text-white transition-colors border border-blue-600/50 bg-blue-600/10 hover:bg-blue-600/20 hover:border-blue-500 rounded-full px-3 py-1.5 w-fit">
+                <CalendarPlus className="h-3.5 w-3.5 text-blue-400" />
+                Book via Oladoc
               </a>
             </div>
           </div>
@@ -47,6 +57,7 @@ export default function Footer() {
               <li><Link href="/doctors" className="hover:text-white transition-colors">Our Doctors</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors">Medical Services</Link></li>
               <li><a href="https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-primary font-medium">Book Appointment</a></li>
+              <li><a href="https://oladoc.com/pakistan/multan/dr/general-surgeon/muhammad-waseem-abbas/442134" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors text-blue-400 font-medium flex items-center gap-1.5"><CalendarPlus className="h-3.5 w-3.5" /> Book on Oladoc</a></li>
             </ul>
           </div>
 

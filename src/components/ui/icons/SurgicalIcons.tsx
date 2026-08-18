@@ -197,50 +197,50 @@ export const DetailedOvarianTumorIcon = ({ className }: { className?: string }) 
 
 export const DetailedLapOvarianCystIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 64 64" fill="none" className={className}>
-    <circle cx="32" cy="32" r="30" fill="#f0f9ff" stroke="#bae6fd" strokeWidth="2"/>
-    <path d="M32 46 C38 46, 42 38, 42 30 C42 22, 36 18, 32 18 C28 18, 22 22, 22 30 C22 38, 26 46, 32 46 Z" fill="#ffe4e6" stroke="#fb7185" strokeWidth="2"/>
-    <path d="M22 24 C14 20, 10 26, 10 26" fill="none" stroke="#fb7185" strokeWidth="2" strokeLinecap="round"/>
-    <ellipse cx="12" cy="28" rx="5" ry="6" fill="#fecdd3" stroke="#e11d48" strokeWidth="1.5"/>
-    <circle cx="12" cy="26" r="3" fill="#fda4af" stroke="#be123c" strokeWidth="1"/>
-    <path d="M48 6 L14 24" stroke="#94a3b8" strokeWidth="2.5" strokeLinecap="round"/>
-    <path d="M14 24 L10 26 L12 28 Z" fill="#cbd5e1" stroke="#64748b" strokeWidth="1.5"/>
-    <circle cx="44" cy="12" r="4" fill="#38bdf8" opacity="0.3"/>
+    <circle cx="32" cy="32" r="30" fill="#f0f9ff" stroke="#bae6fd" strokeWidth="2" />
+    <path d="M32 46 C38 46, 42 38, 42 30 C42 22, 36 18, 32 18 C28 18, 22 22, 22 30 C22 38, 26 46, 32 46 Z" fill="#ffe4e6" stroke="#fb7185" strokeWidth="2" />
+    <path d="M22 24 C14 20, 10 26, 10 26" fill="none" stroke="#fb7185" strokeWidth="2" strokeLinecap="round" />
+    <ellipse cx="12" cy="28" rx="5" ry="6" fill="#fecdd3" stroke="#e11d48" strokeWidth="1.5" />
+    <circle cx="12" cy="26" r="3" fill="#fda4af" stroke="#be123c" strokeWidth="1" />
+    <path d="M48 6 L14 24" stroke="#94a3b8" strokeWidth="2.5" strokeLinecap="round" />
+    <path d="M14 24 L10 26 L12 28 Z" fill="#cbd5e1" stroke="#64748b" strokeWidth="1.5" />
+    <circle cx="44" cy="12" r="4" fill="#38bdf8" opacity="0.3" />
   </svg>
 );
 
 export const DetailedKidneyStonesIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 64 64" fill="none" className={className}>
-    <circle cx="32" cy="32" r="30" fill="#fffbeb" stroke="#fde68a" strokeWidth="2"/>
-    <path d="M24 24 C14 24, 12 36, 18 42 C24 48, 30 46, 30 38 C30 30, 32 24, 24 24 Z" fill="#fca5a5" stroke="#dc2626" strokeWidth="2"/>
-    <path d="M40 24 C50 24, 52 36, 46 42 C40 48, 34 46, 34 38 C34 30, 32 24, 40 24 Z" fill="#fca5a5" stroke="#dc2626" strokeWidth="2"/>
-    <path d="M24 38 C24 48, 28 54, 28 54" fill="none" stroke="#fca5a5" strokeWidth="3" strokeLinecap="round"/>
-    <path d="M40 38 C40 48, 36 54, 36 54" fill="none" stroke="#fca5a5" strokeWidth="3" strokeLinecap="round"/>
-    <path d="M21 32 L23 30 L25 33 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1"/>
-    <path d="M25 46 L27 45 L27 48 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1"/>
-    <path d="M42 34 L45 33 L44 36 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1"/>
+    <circle cx="32" cy="32" r="30" fill="#fffbeb" stroke="#fde68a" strokeWidth="2" />
+    <path d="M24 24 C14 24, 12 36, 18 42 C24 48, 30 46, 30 38 C30 30, 32 24, 24 24 Z" fill="#fca5a5" stroke="#dc2626" strokeWidth="2" />
+    <path d="M40 24 C50 24, 52 36, 46 42 C40 48, 34 46, 34 38 C34 30, 32 24, 40 24 Z" fill="#fca5a5" stroke="#dc2626" strokeWidth="2" />
+    <path d="M24 38 C24 48, 28 54, 28 54" fill="none" stroke="#fca5a5" strokeWidth="3" strokeLinecap="round" />
+    <path d="M40 38 C40 48, 36 54, 36 54" fill="none" stroke="#fca5a5" strokeWidth="3" strokeLinecap="round" />
+    <path d="M21 32 L23 30 L25 33 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1" />
+    <path d="M25 46 L27 45 L27 48 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1" />
+    <path d="M42 34 L45 33 L44 36 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1" />
   </svg>
 );
 
 export const DetailedBladderStonesIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 64 64" fill="none" className={className}>
-    <circle cx="32" cy="32" r="30" fill="#fffbeb" stroke="#fde68a" strokeWidth="2"/>
-    <path d="M32 50 C44 50, 48 40, 48 30 C48 20, 40 16, 32 16 C24 16, 16 20, 16 30 C16 40, 20 50, 32 50 Z" fill="#fca5a5" stroke="#dc2626" strokeWidth="2"/>
-    <path d="M28 50 L28 58 M36 50 L36 58" stroke="#dc2626" strokeWidth="2" strokeLinecap="round"/>
-    <path d="M24 32 L28 28 L30 34 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1"/>
-    <path d="M36 34 L38 31 L40 35 L38 38 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1"/>
-    <path d="M30 40 L34 38 L35 43 L31 44 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1"/>
-    <path d="M24 24 C28 20, 36 20, 40 24" fill="none" stroke="#fecaca" strokeWidth="1.5" strokeDasharray="2 2"/>
+    <circle cx="32" cy="32" r="30" fill="#fffbeb" stroke="#fde68a" strokeWidth="2" />
+    <path d="M32 50 C44 50, 48 40, 48 30 C48 20, 40 16, 32 16 C24 16, 16 20, 16 30 C16 40, 20 50, 32 50 Z" fill="#fca5a5" stroke="#dc2626" strokeWidth="2" />
+    <path d="M28 50 L28 58 M36 50 L36 58" stroke="#dc2626" strokeWidth="2" strokeLinecap="round" />
+    <path d="M24 32 L28 28 L30 34 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1" />
+    <path d="M36 34 L38 31 L40 35 L38 38 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1" />
+    <path d="M30 40 L34 38 L35 43 L31 44 Z" fill="#fde047" stroke="#ca8a04" strokeWidth="1" />
+    <path d="M24 24 C28 20, 36 20, 40 24" fill="none" stroke="#fecaca" strokeWidth="1.5" strokeDasharray="2 2" />
   </svg>
 );
 
 export const DetailedAbdominalTumorIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 64 64" fill="none" className={className}>
-    <circle cx="32" cy="32" r="30" fill="#f8fafc" stroke="#cbd5e1" strokeWidth="2"/>
-    <path d="M18 16 C18 36, 14 52, 32 54 C50 52, 46 36, 46 16" fill="#f1f5f9" stroke="#94a3b8" strokeWidth="2"/>
-    <path d="M24 26 C26 22, 38 22, 40 26 C42 30, 42 40, 40 44 C38 48, 26 48, 24 44 C22 40, 22 30, 24 26 Z" fill="#e2e8f0" stroke="#cbd5e1" strokeWidth="1.5" strokeDasharray="2 2"/>
-    <circle cx="36" cy="34" r="8" fill="#f87171" stroke="#b91c1c" strokeWidth="1.5"/>
-    <circle cx="34" cy="32" r="3" fill="#ef4444"/>
-    <path d="M36 22 L36 24 M36 44 L36 46 M24 34 L26 34 M46 34 L48 34" stroke="#f87171" strokeWidth="2" strokeLinecap="round"/>
-    <path d="M28 26 L30 28 M42 40 L44 42 M42 26 L40 28 M28 42 L30 40" stroke="#fca5a5" strokeWidth="1.5" strokeLinecap="round"/>
+    <circle cx="32" cy="32" r="30" fill="#f8fafc" stroke="#cbd5e1" strokeWidth="2" />
+    <path d="M18 16 C18 36, 14 52, 32 54 C50 52, 46 36, 46 16" fill="#f1f5f9" stroke="#94a3b8" strokeWidth="2" />
+    <path d="M24 26 C26 22, 38 22, 40 26 C42 30, 42 40, 40 44 C38 48, 26 48, 24 44 C22 40, 22 30, 24 26 Z" fill="#e2e8f0" stroke="#cbd5e1" strokeWidth="1.5" strokeDasharray="2 2" />
+    <circle cx="36" cy="34" r="8" fill="#f87171" stroke="#b91c1c" strokeWidth="1.5" />
+    <circle cx="34" cy="32" r="3" fill="#ef4444" />
+    <path d="M36 22 L36 24 M36 44 L36 46 M24 34 L26 34 M46 34 L48 34" stroke="#f87171" strokeWidth="2" strokeLinecap="round" />
+    <path d="M28 26 L30 28 M42 40 L44 42 M42 26 L40 28 M28 42 L30 40" stroke="#fca5a5" strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );

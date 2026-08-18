@@ -33,18 +33,16 @@ export const BreastCancerSection = () => {
                 <h3 className="text-[24px] lg:text-[28px] font-bold text-[#111827] mb-2">Hear From Our Patients</h3>
                 <p className="text-[15px] text-slate-600 mb-6 lg:mb-8">Real stories of care and recovery.</p>
 
-                <div
-                  className="mx-auto w-full max-w-[325px] bg-black rounded-[16px] overflow-hidden shadow-2xl"
-                  style={{ height: '580px' }}
-                >
-                  <iframe
-                    src="https://www.tiktok.com/embed/v2/7557029336390421768"
-                    className="w-full h-full"
-                    allowFullScreen
-                    scrolling="no"
-                    title="Patient Testimonial - Breast Cancer"
-                    style={{ border: 'none' }}
-                  ></iframe>
+                <div className="mx-auto flex justify-center w-full max-w-[325px] rounded-[16px] overflow-hidden shadow-2xl border-4 border-white bg-black">
+                  <video 
+                    src="/videos/Breast-Cancer.mp4" 
+                    controls 
+                    playsInline
+                    className="w-full h-auto object-cover"
+                    style={{ maxHeight: '580px' }}
+                  >
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </SlideUp>
             </div>

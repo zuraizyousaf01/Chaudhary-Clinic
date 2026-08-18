@@ -86,7 +86,7 @@ export default function Home() {
                         </div>
                         <div>
                           <p className="text-sm text-slate-300 font-medium uppercase tracking-wider">Experience</p>
-                          <p className="text-xl font-bold">10+ Years in Surgery</p>
+                          <p className="text-xl font-bold">15+ Years in Surgery</p>
                         </div>
                       </div>
                     </div>
@@ -101,7 +101,7 @@ export default function Home() {
                 </h2>
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-bold uppercase tracking-wider mb-6">
                   <Stethoscope className="h-4 w-4" />
-                  General, Laparoscopic & Gynecologic Surgery
+                  General & Laparoscopic Surgery
                 </span>
                 <p className="text-base text-slate-600 mb-6 leading-relaxed">
                   Minimally Invasive Surgery Specialist dedicated to providing advanced surgical care with reduced recovery times and optimal patient outcomes.
@@ -129,6 +129,9 @@ export default function Home() {
                         <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Hernia Repair</span>
                         <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Appendectomy</span>
                         <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Diagnostic Laparoscopy</span>
+                        <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Thyroid Surgery</span>
+                        <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Breast Cancer</span>
+                        <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">Bariatric Surgery</span>
                       </div>
                     </div>
                   </div>
