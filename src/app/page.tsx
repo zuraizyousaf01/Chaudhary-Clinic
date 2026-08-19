@@ -26,6 +26,22 @@ export default function Home() {
 
   return (
     <div className="flex flex-col pb-0 sm:pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "Breast Cancer Patient Testimonial - Choudhary Clinic",
+            "description": "A real patient story about breast cancer treatment and recovery at Choudhary Clinic in Multan.",
+            "thumbnailUrl": [
+              "https://choudharyclinic.com/images/doctors/opd.webp"
+            ],
+            "uploadDate": "2024-01-01T08:00:00+08:00",
+            "contentUrl": "https://choudharyclinic.com/videos/Breast-Cancer-Cut.mp4"
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="relative -mt-20 pt-20 min-h-screen flex flex-col items-center justify-center text-white z-0 [clip-path:inset(0)]">
         <div className="fixed top-0 left-0 w-full h-screen z-[-1]">
