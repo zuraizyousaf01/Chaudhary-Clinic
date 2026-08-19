@@ -34,8 +34,9 @@ export const BreastCancerSection = () => {
               <SlideUp delay={0.2}>
                 <div className="flex flex-row items-center justify-between gap-3 lg:flex-col lg:text-center">
                   <div className="flex-1 text-left lg:text-center pr-1">
-                    <h3 className="text-[20px] sm:text-[24px] lg:text-[28px] font-bold text-[#111827] leading-tight mb-2">Hear From Our Patients</h3>
-                    <p className="text-[14px] sm:text-[15px] text-slate-600 lg:mb-8">Real stories of care and recovery.</p>
+                    <h3 className="text-[14px] sm:text-[16px] uppercase tracking-[0.2em] font-semibold text-slate-500 mb-2">Hear From Our Patients</h3>
+                    <div className="w-12 h-0.5 bg-pink-500 mb-3 lg:mx-auto"></div>
+                    <p className="text-[14px] text-slate-600 lg:mb-8">Real stories of care and recovery.</p>
                   </div>
 
                   <div className="flex-shrink-0 w-[55%] sm:w-[240px] lg:w-full lg:max-w-[325px] mx-auto flex justify-center rounded-[12px] lg:rounded-[16px] overflow-hidden shadow-xl lg:shadow-2xl border-2 lg:border-4 border-white bg-black">

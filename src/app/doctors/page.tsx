@@ -6,6 +6,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Our Specialists",
   description: "Meet Dr. Waseem Abbas Chaudhary and Dr. Sehar Waseem Abbas Chaudhary, our expert surgeons in laparoscopy and gynecology.",
+  alternates: {
+    canonical: '/doctors',
+  },
 };
 
 export default function DoctorsPage() {

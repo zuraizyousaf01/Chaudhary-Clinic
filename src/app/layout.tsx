@@ -23,13 +23,11 @@ export const metadata: Metadata = {
     default: "Choudhary Clinic - Advanced Laparoscopic & Gynecological Care in Multan",
   },
   description: "Advanced Laparoscopic & Gynecological Care by Dr. Waseem Abbas Chaudhary and Dr. Sehar Waseem. Specializing in minimally invasive surgery, maternity care, and general gynecology in Multan.",
-  keywords: ["Laparoscopic Surgery", "Gynecologist", "Maternity Clinic Multan", "Gallbladder Removal", "Hernia Repair", "Dr. Waseem Abbas", "Dr. Sehar Waseem"],
   authors: [{ name: "Choudhary Clinic" }],
   creator: "Choudhary Clinic",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://choudharyclinic.com",
     siteName: "Choudhary Clinic",
     title: "Choudhary Clinic - Advanced Laparoscopic & Gynecological Care",
     description: "Advanced Laparoscopic & Gynecological Care in Multan. Providing state-of-the-art surgical facilities and compassionate maternity care.",

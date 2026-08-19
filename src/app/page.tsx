@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Metadata } from "next";
 import Link from "next/link";
 import { Phone, Calendar, ArrowRight, Star, MapPin, Award, GraduationCap, Stethoscope, CheckCircle2, Clock, Activity, HeartPulse, Building2 } from "lucide-react";
 import reviews from "../../public/data/reviews.json";
@@ -12,6 +13,12 @@ import { FAQSection } from "@/components/ui/FAQSection";
 import CarouselGallery from "@/components/ui/CarouselGallery";
 import BreastCancerSection from "@/components/ui/BreastCancerSection";
 
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
+
 export default function Home() {
   const generalWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20an%20appointment";
   const lapWaLink = "https://wa.me/923368775530?text=I%20would%20like%20to%20book%20a%20consultation%20with%20Dr.%20Waseem%20Abbas";
@@ -21,18 +28,27 @@ export default function Home() {
     <div className="flex flex-col pb-0 sm:pb-20">
       {/* Hero Section */}
       <section className="relative -mt-20 pt-20 min-h-screen flex flex-col items-center justify-center text-white z-0 [clip-path:inset(0)]">
-        <div className="fixed top-0 left-0 w-full h-screen bg-[url('/images/doctors/opd.webp')] bg-cover bg-center z-[-1]" />
+        <div className="fixed top-0 left-0 w-full h-screen z-[-1]">
+          <Image
+            src="/images/doctors/opd.webp"
+            alt="Choudhary Clinic"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
         <div className="absolute inset-0 bg-black/50 z-0" />
         <StaggerContainer className="relative container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center mt-32 sm:mt-48">
           <StaggerItem>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-medium font-serif tracking-tight mb-2 sm:mb-6 max-w-4xl leading-[1.15] sm:leading-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-200 drop-shadow-sm">
-              Choudhary <span className="text-secondary drop-shadow-md">Clinic</span>
-            </h1>
+            <h1 className="sr-only">Choudhary Clinic - Top Laparoscopic Surgeon & Gynecologist in Multan</h1>
+            <div aria-hidden="true" className="text-3xl sm:text-5xl lg:text-6xl font-medium font-serif tracking-tight mb-2 sm:mb-6 max-w-4xl leading-[1.15] sm:leading-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-200 drop-shadow-sm flex flex-col items-center">
+              <span>Choudhary <span className="text-secondary drop-shadow-md">Clinic</span></span>
+            </div>
           </StaggerItem>
           <StaggerItem>
-            <p className="text-sm sm:text-lg md:text-xl text-slate-100 max-w-xl mb-5 sm:mb-10 font-medium leading-snug sm:leading-relaxed tracking-wide shadow-black/10 drop-shadow px-4 sm:px-0">
-              Advanced Laparoscopic, General Surgical, Obstetrical & Gynecological Care
-            </p>
+            <h2 className="text-sm sm:text-lg md:text-xl text-slate-100 max-w-xl mb-5 sm:mb-10 font-medium leading-snug sm:leading-relaxed tracking-wide shadow-black/10 drop-shadow px-4 sm:px-0">
+              Advanced Laparoscopic, General Surgical, Obstetrical & Gynecological Care in Multan
+            </h2>
           </StaggerItem>
           <StaggerItem>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">

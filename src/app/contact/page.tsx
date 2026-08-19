@@ -5,6 +5,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact & Location",
   description: "Get in touch with Choudhary Clinic in Multan. Find our location, booking details, and consultation timings.",
+  alternates: {
+    canonical: '/contact',
+  },
 };
 
 export default function ContactPage() {

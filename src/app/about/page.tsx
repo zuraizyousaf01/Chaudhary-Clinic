@@ -8,7 +8,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Choudhary Clinic's mission to provide advanced laparoscopic and gynecological care with a patient-centered approach.",
+  description: "Learn about Choudhary Clinic's mission to provide advanced laparoscopic and gynecological care with a patient-centered approach in Multan.",
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 export default function AboutPage() {
