@@ -3,6 +3,7 @@ import { Inter, Prata } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 
 const inter = Inter({
@@ -59,10 +60,11 @@ export default function RootLayout({
       className={`${inter.variable} ${prata.variable} font-sans h-full antialiased scroll-smooth`}
     >
       <body suppressHydrationWarning className="min-h-full flex flex-col bg-slate-50">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <LanguageProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <WhatsAppButton />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -100,6 +102,7 @@ export default function RootLayout({
             })
           }}
         />
+        </LanguageProvider>
       </body>
     </html>
   );

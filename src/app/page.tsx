@@ -11,7 +11,8 @@ import { YouTubeVideos } from "@/components/ui/YouTubeVideos";
 import { LaparoscopyIcon, GallbladderIcon, HerniaIcon, MaternityIcon, HighRiskPregnancyIcon, GynecologyIcon } from "@/components/ui/icons/MedicalIcons";
 import { FAQSection } from "@/components/ui/FAQSection";
 import CarouselGallery from "@/components/ui/CarouselGallery";
-import BreastCancerSection from "@/components/ui/BreastCancerSection";
+import SpecializedTreatments from "@/components/ui/SpecializedTreatments";
+
 
 export const metadata: Metadata = {
   alternates: {
@@ -389,12 +390,6 @@ export default function Home() {
                           </div>
                           <h3 className="text-xl font-bold text-slate-900 mb-2">{item.title}</h3>
                           <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">{item.desc}</p>
-
-                          <div className="mt-auto">
-                            <Link href="/services" className={`inline-flex items-center text-sm font-bold ${item.color} group-hover:gap-2 transition-all`}>
-                              Learn more <ArrowRight className="h-4 w-4 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-1 transition-all duration-300" />
-                            </Link>
-                          </div>
                         </div>
                       </div>
                     </StaggerItem>
@@ -403,11 +398,10 @@ export default function Home() {
               </StaggerContainer>
             </div>
           </div>
+
+          <SpecializedTreatments />
         </div>
       </section>
-
-      {/* Breast Cancer Section */}
-      <BreastCancerSection />
 
       {/* Affiliated Hospitals */}
       <section className="py-12 bg-white relative z-10 border-t border-slate-100">

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
@@ -74,6 +75,16 @@ export const BreastCancerSection = () => {
                   <p className="text-pink-600 font-medium mt-2">
                     Do not ignore early symptoms. Adopt a healthy lifestyle and follow your doctor's complete instructions.
                   </p>
+                </div>
+
+                <div className="mt-8 flex justify-center lg:justify-start">
+                  <Link
+                    href="/breast-cancer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-pink-600 px-8 py-4 text-base font-bold text-white hover:bg-pink-700 transition-all duration-300 shadow-xl shadow-pink-600/20 hover:-translate-y-1 hover:shadow-pink-600/40"
+                  >
+                    Learn More About Breast Cancer Care
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  </Link>
                 </div>
               </FadeIn>
             </div>
