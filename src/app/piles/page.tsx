@@ -7,8 +7,11 @@ import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { Translate } from "@/components/ui/Translate";
 
 export const metadata: Metadata = {
-  title: "Piles (Hemorrhoids): Symptoms and Treatment | Choudhary Clinic",
-  description: "Learn about Piles/Bawaseer (بواسیر), its causes, early symptoms, and advanced painless treatments by Dr. Waseem Abbas Chaudhary.",
+  title: "Piles (Bawasir): Causes, Symptoms, and Surgery | Choudhary Clinic",
+  description: "Learn about Piles (بواسیر), symptoms, and the advanced painless surgical treatments offered at Choudhary Clinic in Multan.",
+  alternates: {
+    canonical: '/piles',
+  },
 };
 
 export default function PilesPage() {

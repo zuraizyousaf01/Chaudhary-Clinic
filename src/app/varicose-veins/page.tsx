@@ -9,6 +9,9 @@ import { Translate } from "@/components/ui/Translate";
 export const metadata: Metadata = {
   title: "Varicose Veins: Symptoms and Surgery | Choudhary Clinic",
   description: "Learn about Varicose Veins (ویریکوز وینز), symptoms, and advanced stripping and ligation surgery by Dr. Waseem Abbas Chaudhary.",
+  alternates: {
+    canonical: '/varicose-veins',
+  },
 };
 
 export default function VaricoseVeinsPage() {

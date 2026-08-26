@@ -8,7 +8,10 @@ import { Translate } from "@/components/ui/Translate";
 
 export const metadata: Metadata = {
   title: "Uterine Fibroids: Symptoms and Treatment | Choudhary Clinic",
-  description: "Learn about Uterine Fibroids (بچے دانی کی رسولی), their symptoms, and advanced treatments provided by Dr. Sehar Waseem Chaudhary in Multan.",
+  description: "Learn about Uterine Fibroids (بچہ دانی کی رسولیاں), their symptoms, and advanced surgical treatments by Dr. Sehar Waseem in Multan.",
+  alternates: {
+    canonical: '/fibroids-uterus',
+  },
 };
 
 export default function FibroidsPage() {

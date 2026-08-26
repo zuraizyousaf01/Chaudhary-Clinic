@@ -7,8 +7,11 @@ import { TestimonialCarousel } from "@/components/ui/TestimonialCarousel";
 import { Translate } from "@/components/ui/Translate";
 
 export const metadata: Metadata = {
-  title: "Uterine Cancer Care & Treatment | Choudhary Clinic",
-  description: "Learn about uterine cancer (بچے دانی کا کینسر) symptoms, early diagnosis, and safe surgical treatments by Dr. Sahar Waseem Chaudhary in Multan.",
+  title: "Uterine Cancer: Symptoms, Diagnosis, and Treatment | Choudhary Clinic",
+  description: "Learn about Uterine Cancer (بچہ دانی کا کینسر), its symptoms, and advanced surgical treatments offered at Choudhary Clinic in Multan.",
+  alternates: {
+    canonical: '/uterine-cancer',
+  },
 };
 
 export default function UterineCancerPage() {

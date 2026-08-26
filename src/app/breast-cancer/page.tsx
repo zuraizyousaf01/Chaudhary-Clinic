@@ -8,8 +8,11 @@ import { TestimonialCarousel } from "@/components/ui/TestimonialCarousel";
 import { Translate } from "@/components/ui/Translate";
 
 export const metadata: Metadata = {
-  title: "Breast Cancer Care & Surgery | Choudhary Clinic",
-  description: "Learn about breast cancer (چھاتی کا کینسر) risks, early diagnosis, and surgical treatment by Dr. Waseem Abbas Chaudhary in Multan.",
+  title: "Breast Cancer: Symptoms, Diagnosis, and Treatment | Choudhary Clinic",
+  description: "Learn about Breast Cancer (چھاتی کا کینسر), its early signs, and advanced surgical treatments offered by Dr. Waseem Abbas Chaudhary in Multan.",
+  alternates: {
+    canonical: '/breast-cancer',
+  },
 };
 
 export default function BreastCancerPage() {

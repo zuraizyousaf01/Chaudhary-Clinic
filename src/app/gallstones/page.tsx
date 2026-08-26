@@ -7,8 +7,11 @@ import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { Translate } from "@/components/ui/Translate";
 
 export const metadata: Metadata = {
-  title: "Gallstones: Symptoms and Treatment | Choudhary Clinic",
-  description: "Learn about Gallstones (پتے کی پتھری), their causes, symptoms, and advanced laparoscopic treatments by Dr. Waseem Abbas Chaudhary in Multan.",
+  title: "Gallstones: Symptoms, Causes, and Laparoscopic Surgery | Choudhary Clinic",
+  description: "Learn about Gallbladder stones (پتے کی پتھری), its causes, symptoms, and advanced laparoscopic cholecystectomy at Choudhary Clinic in Multan.",
+  alternates: {
+    canonical: '/gallstones',
+  },
 };
 
 export default function GallstonesPage() {

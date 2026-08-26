@@ -413,7 +413,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">Our Doctors Are Affiliated With</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">Providing advanced care and surgical expertise across Multan's premier healthcare institutions.</p>
           </SlideUp>
-          <StaggerContainer className="flex flex-wrap justify-center gap-4 md:gap-6">
+          <StaggerContainer className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 md:gap-6 w-full max-w-5xl mx-auto">
             {[
               "Nishtar Hospital Multan",
               "Rehman Surgicare Hospital",
@@ -422,12 +422,12 @@ export default function Home() {
               "South Punjab Hospital",
               "Razia Saeed Hospital"
             ].map((hospital, i) => (
-              <StaggerItem key={i} className="flex h-full">
-                <div className="group flex flex-row items-center gap-2 sm:gap-4 bg-[#FAF8F5] border border-slate-200 p-2 sm:px-6 sm:py-4 rounded-xl sm:rounded-2xl hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 w-full h-full text-left">
-                  <div className="bg-white p-1.5 sm:p-2.5 rounded-lg sm:rounded-xl shadow-sm border border-slate-100 group-hover:bg-primary/5 transition-colors shrink-0">
-                    <Building2 className="h-4 w-4 sm:h-6 sm:w-6 text-primary" />
+              <StaggerItem key={i} className="flex h-full w-full">
+                <div className="group flex flex-row items-center gap-2 sm:gap-3 bg-[#FAF8F5] border border-slate-200 p-2 sm:px-4 sm:py-3 rounded-xl sm:rounded-2xl hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1 w-full h-full text-left">
+                  <div className="bg-white p-1.5 sm:p-2 rounded-lg sm:rounded-xl shadow-sm border border-slate-100 group-hover:bg-primary/5 transition-colors shrink-0 hidden sm:block">
+                    <Building2 className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                   </div>
-                  <span className="font-bold text-slate-800 text-[11px] sm:text-lg leading-tight">{hospital}</span>
+                  <span className="font-bold text-slate-800 text-[10px] sm:text-sm leading-tight text-center sm:text-left w-full sm:w-auto">{hospital}</span>
                 </div>
               </StaggerItem>
             ))}

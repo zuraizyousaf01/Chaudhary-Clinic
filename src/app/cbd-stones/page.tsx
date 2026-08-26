@@ -9,6 +9,9 @@ import { Translate } from "@/components/ui/Translate";
 export const metadata: Metadata = {
   title: "CBD Stones & IOC Treatment | Choudhary Clinic",
   description: "Learn about modern intraoperative choledochoscopy (IOC) treatment for CBD stones (پتے کی نالی میں پتھری) by Dr. Waseem Abbas Chaudhary.",
+  alternates: {
+    canonical: '/cbd-stones',
+  },
 };
 
 export default function CBDStonesPage() {

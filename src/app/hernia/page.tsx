@@ -9,6 +9,9 @@ import { Translate } from "@/components/ui/Translate";
 export const metadata: Metadata = {
   title: "Hernia: Causes, Symptoms, and Treatment | Choudhary Clinic",
   description: "Learn about Hernia (ہارنیا), its causes, symptoms, and the advanced surgical treatments offered at Choudhary Clinic in Multan.",
+  alternates: {
+    canonical: '/hernia',
+  },
 };
 
 export default function HerniaPage() {

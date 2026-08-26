@@ -7,8 +7,11 @@ import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { Translate } from "@/components/ui/Translate";
 
 export const metadata: Metadata = {
-  title: "Goitre: Symptoms and Treatment | Choudhary Clinic",
-  description: "Learn about Goitre (گلہڑ), its physical and hormonal symptoms, and advanced surgical treatments by Dr. Waseem Abbas Chaudhary.",
+  title: "Goitre: Symptoms and Thyroid Surgery | Choudhary Clinic",
+  description: "Learn about Goitre (گلہڑ), its causes, symptoms, and the advanced surgical treatments offered at Choudhary Clinic in Multan.",
+  alternates: {
+    canonical: '/goitre',
+  },
 };
 
 export default function GoitrePage() {
