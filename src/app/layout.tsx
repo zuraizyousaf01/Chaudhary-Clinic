@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import "./globals.css";
 
 const inter = Inter({
@@ -65,6 +66,7 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <WhatsAppButton />
+          <LanguageToggle />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

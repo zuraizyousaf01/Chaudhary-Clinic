@@ -8,7 +8,6 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Playfair_Display } from 'next/font/google';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LanguageToggle } from '@/components/ui/LanguageToggle';
 
 const playfair = Playfair_Display({ subsets: ['latin'] });
 
@@ -101,7 +100,6 @@ export default function Header() {
               <CalendarPlus className="h-3.5 w-3.5 text-blue-400" />
               <span>Oladoc</span>
             </a>
-            <LanguageToggle />
           </div>
           {/* Mobile Menu Toggle */}
           <button 
