@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/piles',
     '/varicose-veins',
     '/cbd-stones',
+    '/pilonidal-sinus',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),

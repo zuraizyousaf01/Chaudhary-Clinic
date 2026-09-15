@@ -78,6 +78,14 @@ const treatments = [
     desc: "Don't ignore unusual bleeding or pelvic pain. Discover safe, modern, and confidential treatments for uterine cancer.",
     link: "/uterine-cancer",
     color: "bg-pink-700 hover:bg-pink-800 shadow-pink-700/20"
+  },
+  {
+    id: "pilonidal-sinus",
+    enTitle: "Pilonidal Sinus",
+    urTitle: "پائیلونائیڈل سائنس",
+    desc: "Suffering from tailbone pain, swelling, or pus discharge? Learn about advanced surgical solutions for a permanent cure.",
+    link: "/pilonidal-sinus",
+    color: "bg-indigo-700 hover:bg-indigo-800 shadow-indigo-700/20"
   }
 ];
 

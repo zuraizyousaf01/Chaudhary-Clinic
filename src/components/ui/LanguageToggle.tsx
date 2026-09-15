@@ -15,6 +15,7 @@ const URDU_PAGES = [
   "/piles",
   "/varicose-veins",
   "/cbd-stones",
+  "/pilonidal-sinus",
 ];
 
 export function LanguageToggle() {
