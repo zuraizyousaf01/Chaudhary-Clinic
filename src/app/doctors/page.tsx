@@ -74,7 +74,7 @@ export default function DoctorsPage() {
               </h2>
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-bold uppercase tracking-wider mb-6">
                 <Stethoscope className="h-4 w-4" />
-                General & Laparoscopic Surgery
+                General & Advanced Laparoscopic Surgery
               </span>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
                 Minimally Invasive Surgery Specialist dedicated to providing advanced surgical care with reduced recovery times and optimal patient outcomes.

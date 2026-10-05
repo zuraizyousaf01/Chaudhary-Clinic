@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, AlertCircle, Activity, Stethoscope, Droplets, Flame } from "lucide-react";
+import { ArrowLeft, AlertCircle, Activity, Stethoscope, Droplets, Flame, Video } from "lucide-react";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { Translate } from "@/components/ui/Translate";
@@ -189,6 +189,65 @@ export default function GallstonesPage() {
                 }
               />
             </section>
+
+            {/* Video Procedure Section */}
+            <div className="mt-12 pt-8 border-t border-slate-100">
+              <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8">
+                <Translate
+                  ur={
+                    <div className="flex-1 text-right md:pl-2 w-full" dir="rtl">
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-3">
+                        <Video className="w-3.5 h-3.5" />
+                        <span>سرجیکل طریقہ کار</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2 urdu-text">
+                        پتے کی پتھری کا لیپروسکوپک طریقہ علاج
+                        <span className="block text-sm uppercase tracking-wider font-normal mt-1 text-slate-500" dir="ltr">
+                          Laparoscopic Gallbladder Procedure
+                        </span>
+                      </h3>
+                      <div className="w-12 h-0.5 bg-primary mb-4 ml-auto"></div>
+                      <p className="text-slate-600 urdu-text leading-relaxed text-base sm:text-lg">
+                        ڈاکٹر محمد وسیم عباس چوہدری کے جدید اور محفوظ لیپروسکوپک سرجیکل طریقہ کار کی لائیو ویڈیو دیکھیں۔
+                        <span className="block text-sm font-normal mt-2 text-slate-500" dir="ltr">
+                          Watch the live surgical technique and procedure demonstration.
+                        </span>
+                      </p>
+                    </div>
+                  }
+                  en={
+                    <div className="flex-1 text-left w-full">
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-3">
+                        <Video className="w-3.5 h-3.5" />
+                        <span>Surgical Demonstration</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+                        Laparoscopic Gallbladder Procedure
+                      </h3>
+                      <div className="w-12 h-0.5 bg-primary mb-4"></div>
+                      <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
+                        Watch the advanced, minimally invasive laparoscopic surgery performed by Dr. Muhammad Waseem Abbas Chaudhary.
+                      </p>
+                    </div>
+                  }
+                />
+
+                {/* Vertical Video Player Frame */}
+                <div className="flex-shrink-0 w-full sm:w-[260px] md:w-[280px] lg:w-[320px]">
+                  <div className="relative aspect-[9/16] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-black">
+                    <video
+                      src="/videos/gallbladder_Stones.mp4"
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="absolute inset-0 w-full h-full object-contain"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </SlideUp>

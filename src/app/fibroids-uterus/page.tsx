@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, AlertCircle, Activity, Stethoscope, Droplets, Clock } from "lucide-react";
+import { ArrowLeft, AlertCircle, Activity, Stethoscope, Droplets, Clock, Video } from "lucide-react";
 import { FadeIn } from "@/components/ui/animations/FadeIn";
 import { SlideUp } from "@/components/ui/animations/SlideUp";
 import { Translate } from "@/components/ui/Translate";
@@ -26,7 +26,6 @@ export default function FibroidsPage() {
         {/* Header */}
         <FadeIn>
           <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-pink-100 mb-8 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-pink-100/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
             <Translate
               ur={
                 <>
@@ -213,6 +212,65 @@ export default function FibroidsPage() {
                 }
               />
             </section>
+
+            {/* Video Procedure Section */}
+            <div className="mt-12 pt-8 border-t border-pink-100">
+              <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-8">
+                <Translate
+                  ur={
+                    <div className="flex-1 text-right md:pl-2 w-full" dir="rtl">
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-50 text-pink-600 text-xs font-bold mb-3">
+                        <Video className="w-3.5 h-3.5" />
+                        <span>سرجیکل طریقہ کار</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2 urdu-text">
+                        بچہ دانی کی رسولی کا طریقہ علاج
+                        <span className="block text-sm uppercase tracking-wider font-normal mt-1 text-slate-500" dir="ltr">
+                          Uterine Fibroids Procedure
+                        </span>
+                      </h3>
+                      <div className="w-12 h-0.5 bg-pink-500 mb-4 ml-auto"></div>
+                      <p className="text-slate-600 urdu-text leading-relaxed text-base sm:text-lg">
+                        ڈاکٹر سحر وسیم چوہدری کے جدید اور محفوظ سرجیکل طریقہ کار کی لائیو ویڈیو دیکھیں۔
+                        <span className="block text-sm font-normal mt-2 text-slate-500" dir="ltr">
+                          Watch the live surgical technique and procedure demonstration.
+                        </span>
+                      </p>
+                    </div>
+                  }
+                  en={
+                    <div className="flex-1 text-left w-full">
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-50 text-pink-600 text-xs font-bold mb-3">
+                        <Video className="w-3.5 h-3.5" />
+                        <span>Surgical Demonstration</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
+                        Uterine Fibroids Procedure
+                      </h3>
+                      <div className="w-12 h-0.5 bg-pink-500 mb-4"></div>
+                      <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
+                        Watch the advanced surgical technique performed by Dr. Sahar Waseem Chaudhary.
+                      </p>
+                    </div>
+                  }
+                />
+
+                {/* Vertical Video Player Frame */}
+                <div className="flex-shrink-0 w-full sm:w-[260px] md:w-[280px] lg:w-[320px]">
+                  <div className="relative aspect-[9/16] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-black">
+                    <video
+                      src="/videos/Fibroids_uterus.mp4"
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="absolute inset-0 w-full h-full object-contain"
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </SlideUp>
