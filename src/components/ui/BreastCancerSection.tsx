@@ -45,6 +45,7 @@ export const BreastCancerSection = () => {
                       src="/videos/Breast-Cancer-Cut.mp4"
                       controls
                       playsInline
+                      preload="none"
                       className="w-full h-auto object-contain"
                       style={{ maxHeight: '580px' }}
                     >

@@ -377,7 +377,7 @@ export default function GoitrePage() {
                       src="/videos/goiter.mp4"
                       controls
                       playsInline
-                      preload="metadata"
+                      preload="none"
                       className="absolute inset-0 w-full h-full object-contain"
                     >
                       Your browser does not support the video tag.

@@ -64,6 +64,7 @@ export function TestimonialCarousel({ videos }: Props) {
             src={videos[activeIndex]}
             controls
             playsInline
+            preload="none"
             className="absolute inset-0 w-full h-full object-contain"
           >
             Your browser does not support the video tag.
