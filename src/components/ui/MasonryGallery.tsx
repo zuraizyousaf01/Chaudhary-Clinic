@@ -7,28 +7,54 @@ import Masonry from "react-masonry-css";
 
 // Use all gallery images for the about page masonry layout
 const galleryImages = [
-  "/images/gallery/clinic-gallery-01.webp",
-  "/images/gallery/clinic-gallery-02.webp",
-  "/images/gallery/clinic-gallery-03.webp",
-  "/images/gallery/clinic-gallery-04.webp",
-  "/images/gallery/clinic-gallery-05.webp",
-  "/images/gallery/clinic-gallery-06.webp",
-  "/images/gallery/clinic-gallery-07.webp",
-  "/images/gallery/clinic-gallery-08.webp",
-  "/images/gallery/clinic-gallery-09.webp",
-  "/images/gallery/clinic-gallery-10.webp",
-  "/images/gallery/clinic-gallery-11.webp",
-  "/images/gallery/clinic-gallery-12.webp",
-  "/images/gallery/clinic-gallery-13.webp",
-  "/images/gallery/clinic-gallery-14.webp",
-  "/images/gallery/clinic-gallery-15.webp",
-  "/images/gallery/clinic-gallery-16.webp",
-  "/images/gallery/clinic-gallery-17.webp",
-  "/images/gallery/clinic-gallery-18.webp",
-  "/images/gallery/clinic-gallery-19.webp",
-  "/images/gallery/clinic-gallery-20.webp",
-  "/images/gallery/clinic-gallery-21.webp",
-  "/images/gallery/clinic-gallery-22.webp",
+  { src: "/images/gallery/clinic-gallery-37.webp", width: 1280, height: 720 },
+  { src: "/images/gallery/clinic-gallery-22.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-07.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-35.webp", width: 1280, height: 720 },
+  { src: "/images/gallery/clinic-gallery-25.webp", width: 995, height: 825 },
+  { src: "/images/gallery/clinic-gallery-48.webp", width: 1280, height: 835 },
+  { src: "/images/gallery/clinic-gallery-23.webp", width: 960, height: 720 },
+  { src: "/images/gallery/clinic-gallery-04.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-14.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-01.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-36.webp", width: 1156, height: 867 },
+  { src: "/images/gallery/clinic-gallery-41.webp", width: 1280, height: 853 },
+  { src: "/images/gallery/clinic-gallery-17.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-29.webp", width: 1280, height: 963 },
+  { src: "/images/gallery/clinic-gallery-33.webp", width: 1280, height: 890 },
+  { src: "/images/gallery/clinic-gallery-19.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-02.webp", width: 1066, height: 1600 },
+  { src: "/images/gallery/clinic-gallery-28.webp", width: 576, height: 1280 },
+  { src: "/images/gallery/clinic-gallery-46.webp", width: 910, height: 1141 },
+  { src: "/images/gallery/clinic-gallery-32.webp", width: 1280, height: 853 },
+  { src: "/images/gallery/clinic-gallery-16.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-18.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-11.webp", width: 864, height: 1152 },
+  { src: "/images/gallery/clinic-gallery-24.webp", width: 590, height: 1280 },
+  { src: "/images/gallery/clinic-gallery-40.webp", width: 989, height: 1280 },
+  { src: "/images/gallery/clinic-gallery-06.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-09.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-44.webp", width: 960, height: 1280 },
+  { src: "/images/gallery/clinic-gallery-38.webp", width: 1156, height: 867 },
+  { src: "/images/gallery/clinic-gallery-20.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-15.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-26.webp", width: 665, height: 702 },
+  { src: "/images/gallery/clinic-gallery-05.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-34.webp", width: 853, height: 1280 },
+  { src: "/images/gallery/clinic-gallery-45.webp", width: 1280, height: 960 },
+  { src: "/images/gallery/clinic-gallery-30.webp", width: 1280, height: 853 },
+  { src: "/images/gallery/clinic-gallery-47.webp", width: 814, height: 1094 },
+  { src: "/images/gallery/clinic-gallery-10.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-08.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-31.webp", width: 1280, height: 853 },
+  { src: "/images/gallery/clinic-gallery-27.webp", width: 1080, height: 810 },
+  { src: "/images/gallery/clinic-gallery-03.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-13.webp", width: 1600, height: 1142 },
+  { src: "/images/gallery/clinic-gallery-43.webp", width: 1280, height: 853 },
+  { src: "/images/gallery/clinic-gallery-21.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-12.webp", width: 1600, height: 1066 },
+  { src: "/images/gallery/clinic-gallery-39.webp", width: 914, height: 1280 },
+  { src: "/images/gallery/clinic-gallery-42.webp", width: 1280, height: 853 },
 ];
 
 export default function MasonryGallery() {
@@ -62,17 +88,17 @@ export default function MasonryGallery() {
           className="flex w-auto -ml-3 md:-ml-4"
           columnClassName="pl-3 md:pl-4 bg-clip-padding"
         >
-          {galleryImages.map((src, index) => (
+          {galleryImages.map((item, index) => (
             <div
               key={index}
-              className="mb-3 md:mb-4 rounded-xl overflow-hidden cursor-pointer group relative shadow-sm hover:shadow-md transition-all break-inside-avoid"
-              onClick={() => setSelectedImage(src)}
+              className="mb-3 md:mb-4 rounded-xl overflow-hidden cursor-pointer group relative shadow-sm hover:shadow-md transition-all break-inside-avoid bg-slate-100"
+              onClick={() => setSelectedImage(item.src)}
             >
               <Image
-                src={src}
+                src={item.src}
                 alt={`Clinic Facility Image ${index + 1}`}
-                width={600}
-                height={800}
+                width={item.width}
+                height={item.height}
                 className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
               />
